@@ -1,0 +1,10 @@
+Manifest-Version: 1.0  
+Class-Path: lib/c3p0-0.9.1.1.jar lib/jta-1.1.jar lib/log4j-1.2.16.jar lib/mail.jar lib/mybatis-3.3.0.jar lib/mysql-connector-java-5.1.38-bin.jar lib/org-json.jar  
+   lib/quartz-2.2.2.jar lib/quartz-jobs-2.2.2.jar lib/slf4j-api-1.7.7.jar lib/slf4j-log4j12-1.7.7.jar lib/xdepal.jar lib/pal/cisco-serializer.2.7.2b.jar lib/pal/cisco-xalan.2.7.2b.jar lib/pal/com.cisco.xmp.osgi.jz   lib-1.0.7.jar  
+   lib/pal/com.cisco.xmp.osgi.snmp4j-1.11.jar lib/pal/com.springsource.org.apache.commons.cli-1.1.0.jar lib/pal/com.springsource.org.apache.commons.collections-3.2.0.jar lib/pal/com.springsource.org.apache.commons.fileupload-1.2.0.jar  
+   lib/pal/com.springsource.org.apache.commons.io-1.4.0.jar lib/pal/com.springsource.org.apache.commons.lang-2.4.0.jar lib/pal/com.springsource.org.apache.log4j-1.2.15.jar lib/pal/commons-codec-1.9.jar lib/pal/commons-logging-1.2.jar  
+   lib/pal/commons-net-cisco-3.3a.jar lib/pal/httpasyncclient-4.1.jar lib/pal/httpclient-4.4.1.jar lib/pal/httpcore-4.4.1.jar lib/pal/httpcore-nio-4.4.1.jar lib/pal/httpmime-4.2.3.jar lib/pal/jsch-cisco.0.1.50c.jar lib/pal/mibble-mibs-2.9.3.jar  
+   lib/pal/mibble-parser-2.9.3.jar lib/pal/mozilla.javascript-cisco.1.7.0.R4c.jar lib/pal/netty-all-4.0.21.Final.jar lib/pal/velocity-cisco.1.7a.jar lib/pal/xercesImpl-2.9.1.jar  /root/cisco_kta_shct_quartz/ 
+   com.cisco.kta.mail.jar com.cisco.kta.shct.asr9kcefusage.jar com.cisco.kta.shct.database.dao.jar com.cisco.kta.shct.database.handler.jar com.cisco.kta.shct.database.model.jar com.cisco.kta.shct.database.xml.jar  
+   com.cisco.kta.shct.mainjob.quartz.jar com.cisco.kta.shct.xde.jar com.cisco.sql.datetimetranslate.jar com.cisco.kta.shct.aclcommandoutput.jar com.cisco.kta.shct.asr9kunicastflooding.jar
+Main-Class: com.cisco.kta.shct.mainjob.quartz.mainprocedure  

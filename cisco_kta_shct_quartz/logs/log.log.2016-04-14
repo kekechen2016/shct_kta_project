@@ -1,0 +1,997 @@
+2016-04-14 09:35:07  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-04-14 09:35:07  [ main:6 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-04-14 09:35:07  [ main:9 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-04-14 09:35:08  [ main:816 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-04-14 09:35:08  [ main:820 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-04-14 09:35:08  [ main:1150 ] - [ INFO ]  SessionManagerImpl initialized
+2016-04-14 09:35:08  [ main:1197 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-04-14 09:35:08  [ main:1201 ] - [ INFO ]  Starting intial XDE package load
+2016-04-14 09:35:08  [ main:1201 ] - [ INFO ]  Adding package for resource 7609_netdr_capture
+2016-04-14 09:35:09  [ main:1477 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-04-14 09:35:09  [ main:1925 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-04-14 09:35:09  [ main:1960 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-04-14 09:35:09  [ main:2020 ] - [ INFO ]  Adding package for resource shct_info_capture
+2016-04-14 09:35:09  [ main:2127 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-04-14 09:35:10  [ main:2367 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-04-14 09:35:10  [ main:2548 ] - [ INFO ]  Finished intial XDE package load
+2016-04-14 09:35:10  [ main:2549 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-04-14 09:35:10  [ main:2581 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-04-14 09:35:10  [ main:3000 ] - [ INFO ]  Start of validation problem output
+2016-04-14 09:35:10  [ main:3000 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-04-14 09:35:10  [ main:3000 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-04-14 09:35:10  [ main:3000 ] - [ INFO ]  Start of XEP binding output
+2016-04-14 09:35:10  [ main:3000 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-04-14 09:35:10  [ main:3006 ] - [ INFO ]  Started XDE Runtime in 3007 milliseconds
+2016-04-14 09:35:10  [ main:3017 ] - [ INFO ]  xde is initializing !
+2016-04-14 09:35:10  [ main:3147 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-04-14 09:35:11  [ main:3372 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-04-14 09:35:11  [ main:3372 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-04-14 09:35:11  [ main:3373 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-04-14 09:35:11  [ main:3376 ] - [ INFO ]  RAMJobStore initialized.
+2016-04-14 09:35:11  [ main:3377 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-04-14 09:35:11  [ main:3377 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-04-14 09:35:11  [ main:3377 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-04-14 09:35:11  [ main:3430 ] - [ INFO ]  Parsing XML file: quartz_jobs2.xml with systemId: quartz_jobs2.xml
+2016-04-14 09:35:11  [ main:3731 ] - [ ERROR ]  Error scheduling jobs: Job class must implement the Job interface.
+java.lang.IllegalArgumentException: Job class must implement the Job interface.
+	at org.quartz.impl.JobDetailImpl.setJobClass(JobDetailImpl.java:311)
+	at org.quartz.JobBuilder.build(JobBuilder.java:103)
+	at org.quartz.xml.XMLSchedulingDataProcessor.process(XMLSchedulingDataProcessor.java:610)
+	at org.quartz.xml.XMLSchedulingDataProcessor.processFile(XMLSchedulingDataProcessor.java:457)
+	at org.quartz.xml.XMLSchedulingDataProcessor.processFileAndScheduleJobs(XMLSchedulingDataProcessor.java:841)
+	at org.quartz.plugins.xml.XMLSchedulingDataProcessorPlugin.processFile(XMLSchedulingDataProcessorPlugin.java:319)
+	at org.quartz.plugins.xml.XMLSchedulingDataProcessorPlugin.start(XMLSchedulingDataProcessorPlugin.java:246)
+	at org.quartz.plugins.SchedulerPluginWithUserTransactionSupport.start(SchedulerPluginWithUserTransactionSupport.java:144)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:2407)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:568)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:142)
+	at com.cisco.kta.shct.mainjob.quartz.mainprocedure.main(mainprocedure.java:19)
+2016-04-14 09:35:11  [ main:3745 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-04-14 09:35:11  [ QuartzScheduler_Worker-1:3758 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  09:35:11 04/14/2016
+2016-04-14 09:35:11  [ QuartzScheduler_Worker-1:3764 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  09:35:11 04/14/2016 and reports: null
+2016-04-14 09:36:11  [ QuartzScheduler_Worker-2:63418 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  09:36:11 04/14/2016
+2016-04-14 09:36:11  [ QuartzScheduler_Worker-2:63418 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  09:36:11 04/14/2016 and reports: null
+2016-04-14 09:36:37  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-04-14 09:36:37  [ main:5 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-04-14 09:36:37  [ main:6 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-04-14 09:36:38  [ main:529 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-04-14 09:36:38  [ main:531 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-04-14 09:36:38  [ main:796 ] - [ INFO ]  SessionManagerImpl initialized
+2016-04-14 09:36:38  [ main:840 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-04-14 09:36:38  [ main:853 ] - [ INFO ]  Starting intial XDE package load
+2016-04-14 09:36:38  [ main:854 ] - [ INFO ]  Adding package for resource 7609_netdr_capture
+2016-04-14 09:36:39  [ main:1117 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-04-14 09:36:39  [ main:1567 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-04-14 09:36:39  [ main:1597 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-04-14 09:36:39  [ main:1689 ] - [ INFO ]  Adding package for resource shct_info_capture
+2016-04-14 09:36:39  [ main:1801 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-04-14 09:36:39  [ main:2059 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-04-14 09:36:40  [ main:2204 ] - [ INFO ]  Finished intial XDE package load
+2016-04-14 09:36:40  [ main:2205 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-04-14 09:36:40  [ main:2233 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-04-14 09:36:40  [ main:2649 ] - [ INFO ]  Start of validation problem output
+2016-04-14 09:36:40  [ main:2649 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-04-14 09:36:40  [ main:2650 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-04-14 09:36:40  [ main:2650 ] - [ INFO ]  Start of XEP binding output
+2016-04-14 09:36:40  [ main:2650 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-04-14 09:36:40  [ main:2672 ] - [ INFO ]  Started XDE Runtime in 2672 milliseconds
+2016-04-14 09:36:40  [ main:2709 ] - [ INFO ]  xde is initializing !
+2016-04-14 09:36:40  [ main:2818 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-04-14 09:36:41  [ main:3210 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-04-14 09:36:41  [ main:3211 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-04-14 09:36:41  [ main:3211 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-04-14 09:36:41  [ main:3212 ] - [ INFO ]  RAMJobStore initialized.
+2016-04-14 09:36:41  [ main:3213 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-04-14 09:36:41  [ main:3213 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-04-14 09:36:41  [ main:3213 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-04-14 09:36:41  [ main:3254 ] - [ INFO ]  Parsing XML file: quartz_jobs2.xml with systemId: quartz_jobs2.xml
+2016-04-14 09:36:41  [ main:3507 ] - [ INFO ]  Adding 2 jobs, 2 triggers.
+2016-04-14 09:36:41  [ main:3508 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-04-14 09:36:41  [ main:3516 ] - [ INFO ]  Adding job: group4.aclcommandoutput_group1
+2016-04-14 09:36:41  [ main:3517 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-04-14 09:36:41  [ QuartzScheduler_Worker-1:3527 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  09:36:41 04/14/2016
+2016-04-14 09:36:41  [ QuartzScheduler_Worker-1:3528 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  09:36:41 04/14/2016 and reports: null
+2016-04-14 09:37:06  [ QuartzScheduler_Worker-2:28449 ] - [ INFO ]  Job group4.aclcommandoutput_group1 fired (by trigger group4.trigger_4) at:  09:37:06 04/14/2016
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28721 ] - [ INFO ]  Loaded fixed inventory defaults file "customDEFAULT.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28783 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeACSW.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28784 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASASW.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28785 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASR5K.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28786 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeCATOS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28788 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeDEFAULT.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28831 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeHW_VRP.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28831 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28832 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_EXR.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28834 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_XR.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28835 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeJUNOS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28836 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeME1200_OS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28837 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNAM.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28837 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS-UCSM.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28838 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28907 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeONS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28909 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSCOS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28910 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSG500_OS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28910 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeTIMOS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28911 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUCOS.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28911 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUNIX.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28912 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeWLC.def" from classpath.
+2016-04-14 09:37:06  [ XDE ThreadPool 1:28912 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/inventoryDefaults
+2016-04-14 09:37:27  [ QuartzScheduler_Worker-2:49586 ] - [ ERROR ]  <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0/HandlerChain/Handler2(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264.script(procedure.xde)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.connectionFailure(CliSessionContextBase.java:75)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator$5.run(CliTransportCommunicator.java:269)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Error connecting to device [Host: <list><item type="STRING">SH-SH-MS-CR-1.MAN</item></list>:23]null : null
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:323)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased.buildException(CliTransportProviderAsyncNettyBased.java:157)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:132)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:120)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:679)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:565)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:242)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1029)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:496)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:463)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:849)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:200)
+	at io.netty.bootstrap.Bootstrap$2.run(Bootstrap.java:165)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:193)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:201)
+	... 12 more
+2016-04-14 09:37:27  [ QuartzScheduler_Worker-2:49758 ] - [ ERROR ]  <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0/HandlerChain/Handler2(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264.script(procedure.xde)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.connectionFailure(CliSessionContextBase.java:75)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator$5.run(CliTransportCommunicator.java:269)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Error connecting to device [Host: <list><item type="STRING">SH-SH-MS-CR-1.MAN</item></list>:23]null : null
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:323)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased.buildException(CliTransportProviderAsyncNettyBased.java:157)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:132)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:120)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:679)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:565)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:242)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1029)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:496)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:463)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:849)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:200)
+	at io.netty.bootstrap.Bootstrap$2.run(Bootstrap.java:165)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:193)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:201)
+	... 12 more
+2016-04-14 09:37:27  [ QuartzScheduler_Worker-2:49912 ] - [ ERROR ]  <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0/HandlerChain/Handler2(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264.script(procedure.xde)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.connectionFailure(CliSessionContextBase.java:75)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator$5.run(CliTransportCommunicator.java:269)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Error connecting to device [Host: <list><item type="STRING">SH-SH-MS-CR-1.MAN</item></list>:23]null : null
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:323)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased.buildException(CliTransportProviderAsyncNettyBased.java:157)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:132)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:120)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:679)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:565)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:242)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1029)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:496)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:463)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:849)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:200)
+	at io.netty.bootstrap.Bootstrap$2.run(Bootstrap.java:165)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:193)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:201)
+	... 12 more
+2016-04-14 09:37:27  [ QuartzScheduler_Worker-2:49913 ] - [ INFO ]  xde can not capture data three times
+2016-04-14 09:37:27  [ QuartzScheduler_Worker-2:49914 ] - [ INFO ]  Job group4.aclcommandoutput_group1 execution complete at  09:37:27 04/14/2016 and reports: null
+2016-04-14 09:39:52  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-04-14 09:39:52  [ main:27 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-04-14 09:39:52  [ main:28 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-04-14 09:39:52  [ main:649 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-04-14 09:39:52  [ main:650 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-04-14 09:39:52  [ main:908 ] - [ INFO ]  SessionManagerImpl initialized
+2016-04-14 09:39:53  [ main:945 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-04-14 09:39:53  [ main:948 ] - [ INFO ]  Starting intial XDE package load
+2016-04-14 09:39:53  [ main:948 ] - [ INFO ]  Adding package for resource 7609_netdr_capture
+2016-04-14 09:39:53  [ main:1177 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-04-14 09:39:53  [ main:1532 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-04-14 09:39:53  [ main:1562 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-04-14 09:39:53  [ main:1646 ] - [ INFO ]  Adding package for resource shct_info_capture
+2016-04-14 09:39:53  [ main:1761 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-04-14 09:39:54  [ main:1979 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-04-14 09:39:54  [ main:2090 ] - [ INFO ]  Finished intial XDE package load
+2016-04-14 09:39:54  [ main:2091 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-04-14 09:39:54  [ main:2109 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-04-14 09:39:54  [ main:2457 ] - [ INFO ]  Start of validation problem output
+2016-04-14 09:39:54  [ main:2457 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-04-14 09:39:54  [ main:2457 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-04-14 09:39:54  [ main:2457 ] - [ INFO ]  Start of XEP binding output
+2016-04-14 09:39:54  [ main:2457 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-04-14 09:39:54  [ main:2493 ] - [ INFO ]  Started XDE Runtime in 2494 milliseconds
+2016-04-14 09:39:54  [ main:2514 ] - [ INFO ]  xde is initializing !
+2016-04-14 09:39:54  [ main:2591 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-04-14 09:39:54  [ main:2812 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-04-14 09:39:54  [ main:2812 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-04-14 09:39:54  [ main:2813 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-04-14 09:39:54  [ main:2814 ] - [ INFO ]  RAMJobStore initialized.
+2016-04-14 09:39:54  [ main:2814 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-04-14 09:39:54  [ main:2814 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-04-14 09:39:54  [ main:2814 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-04-14 09:39:54  [ main:2844 ] - [ INFO ]  Parsing XML file: quartz_jobs2.xml with systemId: quartz_jobs2.xml
+2016-04-14 09:39:55  [ main:3063 ] - [ INFO ]  Adding 2 jobs, 2 triggers.
+2016-04-14 09:39:55  [ main:3063 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-04-14 09:39:55  [ main:3064 ] - [ INFO ]  Adding job: group4.aclcommandoutput_group1
+2016-04-14 09:39:55  [ main:3065 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-04-14 09:39:55  [ QuartzScheduler_Worker-1:3078 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  09:39:55 04/14/2016
+2016-04-14 09:39:55  [ QuartzScheduler_Worker-1:3079 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  09:39:55 04/14/2016 and reports: null
+2016-04-14 09:40:00  [ QuartzScheduler_Worker-2:7916 ] - [ INFO ]  Job group4.aclcommandoutput_group1 fired (by trigger group4.trigger_4) at:  09:40:00 04/14/2016
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8100 ] - [ INFO ]  Loaded fixed inventory defaults file "customDEFAULT.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8135 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeACSW.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8136 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASASW.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8137 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASR5K.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8137 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeCATOS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8139 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeDEFAULT.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8140 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeHW_VRP.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8170 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8171 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_EXR.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8172 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_XR.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8175 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeJUNOS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8176 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeME1200_OS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8177 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNAM.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8178 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS-UCSM.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8207 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8210 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeONS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8212 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSCOS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8213 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSG500_OS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8214 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeTIMOS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8215 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUCOS.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8256 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUNIX.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8256 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeWLC.def" from classpath.
+2016-04-14 09:40:00  [ XDE ThreadPool 1:8257 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/inventoryDefaults
+2016-04-14 09:40:06  [ QuartzScheduler_Worker-2:14117 ] - [ ERROR ]  <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0/HandlerChain/Handler2(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264.script(procedure.xde)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.connectionFailure(CliSessionContextBase.java:75)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator$5.run(CliTransportCommunicator.java:269)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Error connecting to device [Host: <list><item type="STRING">SH-SH-MS-CR-1.MAN</item></list>:23]null : null
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:323)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased.buildException(CliTransportProviderAsyncNettyBased.java:157)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:132)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:120)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:679)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:565)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:242)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1029)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:496)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:463)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:849)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:200)
+	at io.netty.bootstrap.Bootstrap$2.run(Bootstrap.java:165)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:193)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:201)
+	... 12 more
+2016-04-14 09:40:06  [ QuartzScheduler_Worker-2:14248 ] - [ ERROR ]  <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0/HandlerChain/Handler2(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264.script(procedure.xde)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.connectionFailure(CliSessionContextBase.java:75)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator$5.run(CliTransportCommunicator.java:269)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Error connecting to device [Host: <list><item type="STRING">SH-SH-MS-CR-1.MAN</item></list>:23]null : null
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:323)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased.buildException(CliTransportProviderAsyncNettyBased.java:157)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:132)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:120)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:679)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:565)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:242)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1029)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:496)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:463)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:849)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:200)
+	at io.netty.bootstrap.Bootstrap$2.run(Bootstrap.java:165)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:193)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:201)
+	... 12 more
+2016-04-14 09:40:06  [ QuartzScheduler_Worker-2:14363 ] - [ ERROR ]  <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0/HandlerChain/Handler2(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264.script(procedure.xde)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.connectionFailure(CliSessionContextBase.java:75)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator$5.run(CliTransportCommunicator.java:269)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Error connecting to device [Host: <list><item type="STRING">SH-SH-MS-CR-1.MAN</item></list>:23]null : null
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:323)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased.buildException(CliTransportProviderAsyncNettyBased.java:157)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:132)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:120)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:679)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:565)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:242)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1029)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:496)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:463)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:849)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:200)
+	at io.netty.bootstrap.Bootstrap$2.run(Bootstrap.java:165)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:193)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:201)
+	... 12 more
+2016-04-14 09:40:06  [ QuartzScheduler_Worker-2:14365 ] - [ INFO ]  xde can not capture data three times
+2016-04-14 09:40:06  [ QuartzScheduler_Worker-2:14365 ] - [ INFO ]  Job group4.aclcommandoutput_group1 execution complete at  09:40:06 04/14/2016 and reports: null
+2016-04-14 09:43:17  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-04-14 09:43:17  [ main:4 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-04-14 09:43:17  [ main:5 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-04-14 09:43:17  [ main:588 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-04-14 09:43:17  [ main:589 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-04-14 09:43:17  [ main:850 ] - [ INFO ]  SessionManagerImpl initialized
+2016-04-14 09:43:17  [ main:886 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-04-14 09:43:17  [ main:889 ] - [ INFO ]  Starting intial XDE package load
+2016-04-14 09:43:17  [ main:889 ] - [ INFO ]  Adding package for resource 7609_netdr_capture
+2016-04-14 09:43:18  [ main:1136 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-04-14 09:43:18  [ main:1495 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-04-14 09:43:18  [ main:1537 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-04-14 09:43:18  [ main:1634 ] - [ INFO ]  Adding package for resource shct_info_capture
+2016-04-14 09:43:18  [ main:1721 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-04-14 09:43:19  [ main:1982 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-04-14 09:43:19  [ main:2184 ] - [ INFO ]  Finished intial XDE package load
+2016-04-14 09:43:19  [ main:2185 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-04-14 09:43:19  [ main:2199 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-04-14 09:43:19  [ main:2603 ] - [ INFO ]  Start of validation problem output
+2016-04-14 09:43:19  [ main:2604 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-04-14 09:43:19  [ main:2604 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-04-14 09:43:19  [ main:2604 ] - [ INFO ]  Start of XEP binding output
+2016-04-14 09:43:19  [ main:2604 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-04-14 09:43:19  [ main:2635 ] - [ INFO ]  Started XDE Runtime in 2635 milliseconds
+2016-04-14 09:43:19  [ main:2677 ] - [ INFO ]  xde is initializing !
+2016-04-14 09:43:19  [ main:2783 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-04-14 09:43:20  [ main:3057 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-04-14 09:43:20  [ main:3057 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-04-14 09:43:20  [ main:3057 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-04-14 09:43:20  [ main:3058 ] - [ INFO ]  RAMJobStore initialized.
+2016-04-14 09:43:20  [ main:3059 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-04-14 09:43:20  [ main:3059 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-04-14 09:43:20  [ main:3059 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-04-14 09:43:20  [ main:3091 ] - [ INFO ]  Parsing XML file: quartz_jobs2.xml with systemId: quartz_jobs2.xml
+2016-04-14 09:43:20  [ main:3330 ] - [ INFO ]  Adding 2 jobs, 2 triggers.
+2016-04-14 09:43:20  [ main:3330 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-04-14 09:43:20  [ main:3331 ] - [ INFO ]  Adding job: group4.aclcommandoutput_group1
+2016-04-14 09:43:20  [ main:3332 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-04-14 09:43:20  [ QuartzScheduler_Worker-1:3345 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  09:43:20 04/14/2016
+2016-04-14 09:43:20  [ QuartzScheduler_Worker-1:3346 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  09:43:20 04/14/2016 and reports: null
+2016-04-14 09:44:00  [ QuartzScheduler_Worker-2:42959 ] - [ INFO ]  Job group4.aclcommandoutput_group1 fired (by trigger group4.trigger_4) at:  09:44:00 04/14/2016
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43154 ] - [ INFO ]  Loaded fixed inventory defaults file "customDEFAULT.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43175 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeACSW.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43176 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASASW.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43177 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASR5K.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43177 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeCATOS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43196 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeDEFAULT.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43198 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeHW_VRP.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43199 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43200 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_EXR.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43201 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_XR.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43203 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeJUNOS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43203 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeME1200_OS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43204 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNAM.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43204 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS-UCSM.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43205 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43226 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeONS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43228 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSCOS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43229 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSG500_OS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43229 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeTIMOS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43230 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUCOS.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43230 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUNIX.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43231 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeWLC.def" from classpath.
+2016-04-14 09:44:00  [ XDE ThreadPool 1:43231 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/inventoryDefaults
+2016-04-14 09:44:14  [ QuartzScheduler_Worker-2:57083 ] - [ ERROR ]  <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0/HandlerChain/Handler2(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264.script(procedure.xde)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.connectionFailure(CliSessionContextBase.java:75)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator$5.run(CliTransportCommunicator.java:269)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Error connecting to device [Host: <list><item type="STRING">SH-SH-MS-CR-1.MAN</item></list>:23]null : null
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:323)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased.buildException(CliTransportProviderAsyncNettyBased.java:157)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:132)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:120)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:679)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:565)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:242)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1029)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:496)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:463)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:849)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:200)
+	at io.netty.bootstrap.Bootstrap$2.run(Bootstrap.java:165)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:193)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:201)
+	... 12 more
+2016-04-14 09:44:14  [ QuartzScheduler_Worker-2:57227 ] - [ ERROR ]  <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0/HandlerChain/Handler2(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264.script(procedure.xde)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.connectionFailure(CliSessionContextBase.java:75)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator$5.run(CliTransportCommunicator.java:269)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Error connecting to device [Host: <list><item type="STRING">SH-SH-MS-CR-1.MAN</item></list>:23]null : null
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:323)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased.buildException(CliTransportProviderAsyncNettyBased.java:157)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:132)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:120)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:679)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:565)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:242)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1029)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:496)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:463)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:849)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:200)
+	at io.netty.bootstrap.Bootstrap$2.run(Bootstrap.java:165)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:193)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:201)
+	... 12 more
+2016-04-14 09:44:14  [ QuartzScheduler_Worker-2:57373 ] - [ ERROR ]  <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>&lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Error connecting to device [Host: &lt;list&gt;&lt;item type="STRING"&gt;SH-SH-MS-CR-1.MAN&lt;/item&gt;&lt;/list&gt;:23]null : null</message><handlerCode>ERROR_CONNECTION</handlerCode><credential name="CLI_ADDRESS"/><credential name="CLI_PORT">23</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">&lt;null&gt;</credential><credential name="version">12.0(27)S</credential></palError>
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0/HandlerChain/Handler2(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]info_capture/info_capture.par@Rule0(info_capture/info_capture.par)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264.script(procedure.xde)
+	at XDE_ENGINE.[shct_info_capture]procedure.xde@chenfei:16040623411950.steps.chenfei:160406234147264(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.connectionFailure(CliSessionContextBase.java:75)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator$5.run(CliTransportCommunicator.java:269)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Error connecting to device [Host: <list><item type="STRING">SH-SH-MS-CR-1.MAN</item></list>:23]null : null
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:323)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased.buildException(CliTransportProviderAsyncNettyBased.java:157)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:132)
+	at com.cisco.nm.pal.cli.transport.CliTransportProviderAsyncNettyBased$2.operationComplete(CliTransportProviderAsyncNettyBased.java:120)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:679)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:565)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:242)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1029)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:496)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:463)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:849)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:200)
+	at io.netty.bootstrap.Bootstrap$2.run(Bootstrap.java:165)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:193)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:201)
+	... 12 more
+2016-04-14 09:44:14  [ QuartzScheduler_Worker-2:57374 ] - [ INFO ]  xde can not capture data three times
+2016-04-14 09:44:14  [ QuartzScheduler_Worker-2:57375 ] - [ INFO ]  Job group4.aclcommandoutput_group1 execution complete at  09:44:14 04/14/2016 and reports: null
+2016-04-14 09:44:20  [ QuartzScheduler_Worker-3:63070 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  09:44:20 04/14/2016
+2016-04-14 09:44:20  [ QuartzScheduler_Worker-3:63071 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  09:44:20 04/14/2016 and reports: null
+2016-04-14 09:46:21  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-04-14 09:46:21  [ main:8 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-04-14 09:46:21  [ main:10 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-04-14 09:46:22  [ main:578 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-04-14 09:46:22  [ main:579 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-04-14 09:46:22  [ main:829 ] - [ INFO ]  SessionManagerImpl initialized
+2016-04-14 09:46:22  [ main:878 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-04-14 09:46:22  [ main:880 ] - [ INFO ]  Starting intial XDE package load
+2016-04-14 09:46:22  [ main:881 ] - [ INFO ]  Adding package for resource 7609_netdr_capture
+2016-04-14 09:46:23  [ main:1124 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-04-14 09:46:23  [ main:1499 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-04-14 09:46:23  [ main:1532 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-04-14 09:46:23  [ main:1625 ] - [ INFO ]  Adding package for resource shct_info_capture
+2016-04-14 09:46:23  [ main:1717 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-04-14 09:46:23  [ main:1962 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-04-14 09:46:24  [ main:2121 ] - [ INFO ]  Finished intial XDE package load
+2016-04-14 09:46:24  [ main:2122 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-04-14 09:46:24  [ main:2142 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-04-14 09:46:24  [ main:2491 ] - [ INFO ]  Start of validation problem output
+2016-04-14 09:46:24  [ main:2491 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-04-14 09:46:24  [ main:2492 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-04-14 09:46:24  [ main:2492 ] - [ INFO ]  Start of XEP binding output
+2016-04-14 09:46:24  [ main:2492 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-04-14 09:46:24  [ main:2510 ] - [ INFO ]  Started XDE Runtime in 2511 milliseconds
+2016-04-14 09:46:24  [ main:2521 ] - [ INFO ]  xde is initializing !
+2016-04-14 09:46:24  [ main:2582 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-04-14 09:46:24  [ main:2966 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-04-14 09:46:24  [ main:2967 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-04-14 09:46:24  [ main:2967 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-04-14 09:46:24  [ main:2968 ] - [ INFO ]  RAMJobStore initialized.
+2016-04-14 09:46:24  [ main:2968 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-04-14 09:46:24  [ main:2969 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-04-14 09:46:24  [ main:2969 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-04-14 09:46:24  [ main:2984 ] - [ INFO ]  Parsing XML file: quartz_jobs2.xml with systemId: quartz_jobs2.xml
+2016-04-14 09:46:25  [ main:3236 ] - [ INFO ]  Adding 2 jobs, 2 triggers.
+2016-04-14 09:46:25  [ main:3236 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-04-14 09:46:25  [ main:3237 ] - [ INFO ]  Adding job: group4.aclcommandoutput_group1
+2016-04-14 09:46:25  [ main:3238 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-04-14 09:46:25  [ QuartzScheduler_Worker-1:3259 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  09:46:25 04/14/2016
+2016-04-14 09:46:25  [ QuartzScheduler_Worker-1:3260 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  09:46:25 04/14/2016 and reports: null
+2016-04-14 09:47:00  [ QuartzScheduler_Worker-2:38048 ] - [ INFO ]  Job group4.aclcommandoutput_group1 fired (by trigger group4.trigger_4) at:  09:47:00 04/14/2016
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38246 ] - [ INFO ]  Loaded fixed inventory defaults file "customDEFAULT.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38279 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeACSW.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38302 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASASW.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38303 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASR5K.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38304 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeCATOS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38306 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeDEFAULT.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38316 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeHW_VRP.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38317 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38318 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_EXR.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38319 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_XR.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38321 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeJUNOS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38322 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeME1200_OS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38322 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNAM.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38323 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS-UCSM.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38324 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38351 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeONS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38353 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSCOS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38353 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSG500_OS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38354 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeTIMOS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38355 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUCOS.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38355 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUNIX.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38356 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeWLC.def" from classpath.
+2016-04-14 09:47:00  [ XDE ThreadPool 1:38356 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/inventoryDefaults
+2016-04-14 09:47:06  [ QuartzScheduler_Worker-2:44527 ] - [ INFO ]  xde capture data successfully
+2016-04-14 09:47:06  [ QuartzScheduler_Worker-2:44931 ] - [ INFO ]  Type interface com.cisco.kta.shct.database.dao.aclCommandOutputDtoMapper is not known to the MapperRegistry.
+org.apache.ibatis.binding.BindingException: Type interface com.cisco.kta.shct.database.dao.aclCommandOutputDtoMapper is not known to the MapperRegistry.
+	at org.apache.ibatis.binding.MapperRegistry.getMapper(MapperRegistry.java:47)
+	at org.apache.ibatis.session.Configuration.getMapper(Configuration.java:675)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.getMapper(DefaultSqlSession.java:250)
+	at com.cisco.kta.shct.database.handler.aclCommandOutputDBHandler.insert(aclCommandOutputDBHandler.java:24)
+	at com.cisco.kta.shct.aclcommandoutput.aclcommandoutput.execute(aclcommandoutput.java:42)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2016-04-14 09:47:06  [ QuartzScheduler_Worker-2:44932 ] - [ INFO ]  Type interface com.cisco.kta.shct.database.dao.aclCommandOutputDtoMapper is not known to the MapperRegistry.
+org.apache.ibatis.binding.BindingException: Type interface com.cisco.kta.shct.database.dao.aclCommandOutputDtoMapper is not known to the MapperRegistry.
+	at org.apache.ibatis.binding.MapperRegistry.getMapper(MapperRegistry.java:47)
+	at org.apache.ibatis.session.Configuration.getMapper(Configuration.java:675)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.getMapper(DefaultSqlSession.java:250)
+	at com.cisco.kta.shct.database.handler.aclCommandOutputDBHandler.insert(aclCommandOutputDBHandler.java:24)
+	at com.cisco.kta.shct.aclcommandoutput.aclcommandoutput.execute(aclcommandoutput.java:42)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2016-04-14 09:47:06  [ QuartzScheduler_Worker-2:44933 ] - [ INFO ]  Job group4.aclcommandoutput_group1 execution complete at  09:47:06 04/14/2016 and reports: null
+2016-04-14 09:47:24  [ QuartzScheduler_Worker-3:62971 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  09:47:24 04/14/2016
+2016-04-14 09:47:24  [ QuartzScheduler_Worker-3:62972 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  09:47:24 04/14/2016 and reports: null
+2016-04-14 10:00:54  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-04-14 10:00:54  [ main:10 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-04-14 10:00:54  [ main:12 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-04-14 10:00:54  [ main:638 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-04-14 10:00:54  [ main:639 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-04-14 10:00:55  [ main:912 ] - [ INFO ]  SessionManagerImpl initialized
+2016-04-14 10:00:55  [ main:959 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-04-14 10:00:55  [ main:962 ] - [ INFO ]  Starting intial XDE package load
+2016-04-14 10:00:55  [ main:962 ] - [ INFO ]  Adding package for resource 7609_netdr_capture
+2016-04-14 10:00:55  [ main:1202 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-04-14 10:00:55  [ main:1585 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-04-14 10:00:55  [ main:1619 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-04-14 10:00:55  [ main:1696 ] - [ INFO ]  Adding package for resource shct_info_capture
+2016-04-14 10:00:56  [ main:1793 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-04-14 10:00:56  [ main:2024 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-04-14 10:00:56  [ main:2142 ] - [ INFO ]  Finished intial XDE package load
+2016-04-14 10:00:56  [ main:2143 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-04-14 10:00:56  [ main:2168 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-04-14 10:00:56  [ main:2499 ] - [ INFO ]  Start of validation problem output
+2016-04-14 10:00:56  [ main:2499 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-04-14 10:00:56  [ main:2499 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-04-14 10:00:56  [ main:2499 ] - [ INFO ]  Start of XEP binding output
+2016-04-14 10:00:56  [ main:2500 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-04-14 10:00:56  [ main:2526 ] - [ INFO ]  Started XDE Runtime in 2527 milliseconds
+2016-04-14 10:00:56  [ main:2558 ] - [ INFO ]  xde is initializing !
+2016-04-14 10:00:56  [ main:2674 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-04-14 10:00:57  [ main:3006 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-04-14 10:00:57  [ main:3006 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-04-14 10:00:57  [ main:3007 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-04-14 10:00:57  [ main:3007 ] - [ INFO ]  RAMJobStore initialized.
+2016-04-14 10:00:57  [ main:3008 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-04-14 10:00:57  [ main:3008 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-04-14 10:00:57  [ main:3008 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-04-14 10:00:57  [ main:3038 ] - [ INFO ]  Parsing XML file: quartz_jobs2.xml with systemId: quartz_jobs2.xml
+2016-04-14 10:00:57  [ main:3315 ] - [ INFO ]  Adding 2 jobs, 2 triggers.
+2016-04-14 10:00:57  [ main:3316 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-04-14 10:00:57  [ main:3325 ] - [ INFO ]  Adding job: group4.aclcommandoutput_group1
+2016-04-14 10:00:57  [ main:3326 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-04-14 10:00:57  [ QuartzScheduler_Worker-1:3346 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  10:00:57 04/14/2016
+2016-04-14 10:00:57  [ QuartzScheduler_Worker-1:3347 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  10:00:57 04/14/2016 and reports: null
+2016-04-14 10:01:00  [ QuartzScheduler_Worker-2:5797 ] - [ INFO ]  Job group4.aclcommandoutput_group1 fired (by trigger group4.trigger_4) at:  10:01:00 04/14/2016
+2016-04-14 10:01:00  [ XDE ThreadPool 1:5972 ] - [ INFO ]  Loaded fixed inventory defaults file "customDEFAULT.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6014 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeACSW.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6015 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASASW.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6016 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASR5K.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6016 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeCATOS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6018 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeDEFAULT.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6047 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeHW_VRP.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6048 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6049 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_EXR.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6051 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_XR.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6052 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeJUNOS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6053 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeME1200_OS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6053 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNAM.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6054 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS-UCSM.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6054 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6056 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeONS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6089 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSCOS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6089 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSG500_OS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6090 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeTIMOS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6090 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUCOS.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6091 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUNIX.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6091 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeWLC.def" from classpath.
+2016-04-14 10:01:00  [ XDE ThreadPool 1:6092 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/inventoryDefaults
+2016-04-14 10:01:06  [ QuartzScheduler_Worker-2:11794 ] - [ INFO ]  xde capture data successfully
+2016-04-14 10:01:08  [ QuartzScheduler_Worker-2:14076 ] - [ INFO ]  Job group4.aclcommandoutput_group1 execution complete at  10:01:08 04/14/2016 and reports: null
+2016-04-14 10:01:57  [ QuartzScheduler_Worker-3:63011 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  10:01:57 04/14/2016
+2016-04-14 10:01:57  [ QuartzScheduler_Worker-3:63022 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  10:01:57 04/14/2016 and reports: null
+2016-04-14 10:02:00  [ QuartzScheduler_Worker-4:65783 ] - [ INFO ]  Job group4.aclcommandoutput_group1 fired (by trigger group4.trigger_4) at:  10:02:00 04/14/2016
+2016-04-14 10:02:05  [ QuartzScheduler_Worker-4:70872 ] - [ INFO ]  xde capture data successfully
+2016-04-14 10:02:05  [ QuartzScheduler_Worker-4:70897 ] - [ INFO ]  Job group4.aclcommandoutput_group1 execution complete at  10:02:05 04/14/2016 and reports: null
+2016-04-14 10:02:57  [ QuartzScheduler_Worker-5:123012 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  10:02:57 04/14/2016
+2016-04-14 10:02:57  [ QuartzScheduler_Worker-5:123013 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  10:02:57 04/14/2016 and reports: null
+2016-04-14 10:03:00  [ QuartzScheduler_Worker-6:125785 ] - [ INFO ]  Job group4.aclcommandoutput_group1 fired (by trigger group4.trigger_4) at:  10:03:00 04/14/2016
+2016-04-14 10:03:03  [ XDE stats logger:129322 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 128670
+2016-04-14 10:03:05  [ QuartzScheduler_Worker-6:130786 ] - [ INFO ]  xde capture data successfully
+2016-04-14 10:03:05  [ QuartzScheduler_Worker-6:130825 ] - [ INFO ]  Job group4.aclcommandoutput_group1 execution complete at  10:03:05 04/14/2016 and reports: null
+2016-04-14 10:03:57  [ QuartzScheduler_Worker-7:183012 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  10:03:57 04/14/2016
+2016-04-14 10:03:57  [ QuartzScheduler_Worker-7:183013 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  10:03:57 04/14/2016 and reports: null
+2016-04-14 10:04:00  [ QuartzScheduler_Worker-8:185790 ] - [ INFO ]  Job group4.aclcommandoutput_group1 fired (by trigger group4.trigger_4) at:  10:04:00 04/14/2016
+2016-04-14 10:04:05  [ QuartzScheduler_Worker-8:190847 ] - [ INFO ]  xde capture data successfully
+2016-04-14 10:04:05  [ QuartzScheduler_Worker-8:190870 ] - [ INFO ]  Job group4.aclcommandoutput_group1 execution complete at  10:04:05 04/14/2016 and reports: null
+2016-04-14 10:04:06  [ XDE stats logger:192745 ] - [ INFO ]  Requests Running 0, Requests Waiting 0, Thread Idle Time 63423
+2016-04-14 14:14:25  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-04-14 14:14:25  [ main:6 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-04-14 14:14:25  [ main:7 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-04-14 14:14:26  [ main:840 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-04-14 14:14:26  [ main:847 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-04-14 14:14:26  [ main:1130 ] - [ INFO ]  SessionManagerImpl initialized
+2016-04-14 14:14:26  [ main:1176 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-04-14 14:14:26  [ main:1179 ] - [ INFO ]  Starting intial XDE package load
+2016-04-14 14:14:26  [ main:1180 ] - [ INFO ]  Adding package for resource 7609_netdr_capture
+2016-04-14 14:14:26  [ main:1418 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-04-14 14:14:27  [ main:1910 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-04-14 14:14:27  [ main:1949 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-04-14 14:14:27  [ main:2085 ] - [ INFO ]  Adding package for resource shct_info_capture
+2016-04-14 14:14:27  [ main:2237 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-04-14 14:14:27  [ main:2427 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-04-14 14:14:27  [ main:2563 ] - [ INFO ]  Finished intial XDE package load
+2016-04-14 14:14:27  [ main:2564 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-04-14 14:14:27  [ main:2567 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-04-14 14:14:28  [ main:2816 ] - [ INFO ]  Start of validation problem output
+2016-04-14 14:14:28  [ main:2817 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-04-14 14:14:28  [ main:2817 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-04-14 14:14:28  [ main:2817 ] - [ INFO ]  Start of XEP binding output
+2016-04-14 14:14:28  [ main:2817 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-04-14 14:14:28  [ main:2831 ] - [ INFO ]  Started XDE Runtime in 2831 milliseconds
+2016-04-14 14:14:28  [ main:2844 ] - [ INFO ]  xde is initializing !
+2016-04-14 14:14:28  [ main:2891 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-04-14 14:14:28  [ main:3203 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-04-14 14:14:28  [ main:3203 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-04-14 14:14:28  [ main:3204 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-04-14 14:14:28  [ main:3204 ] - [ INFO ]  RAMJobStore initialized.
+2016-04-14 14:14:28  [ main:3205 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-04-14 14:14:28  [ main:3205 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-04-14 14:14:28  [ main:3205 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-04-14 14:14:28  [ main:3221 ] - [ INFO ]  Parsing XML file: quartz_jobs2.xml with systemId: quartz_jobs2.xml
+2016-04-14 14:14:28  [ main:3480 ] - [ INFO ]  Adding 2 jobs, 2 triggers.
+2016-04-14 14:14:28  [ main:3481 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-04-14 14:14:28  [ main:3482 ] - [ INFO ]  Adding job: group4.aclcommandoutput_group1
+2016-04-14 14:14:28  [ main:3483 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-04-14 14:14:28  [ QuartzScheduler_Worker-1:3500 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml) at:  14:14:28 04/14/2016
+2016-04-14 14:14:28  [ QuartzScheduler_Worker-1:3501 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs2_xml execution complete at  14:14:28 04/14/2016 and reports: null
+2016-04-14 14:15:00  [ QuartzScheduler_Worker-2:34636 ] - [ INFO ]  Job group4.aclcommandoutput_group1 fired (by trigger group4.trigger_4) at:  14:15:00 04/14/2016
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34853 ] - [ INFO ]  Loaded fixed inventory defaults file "customDEFAULT.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34895 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeACSW.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34896 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASASW.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34896 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASR5K.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34897 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeCATOS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34899 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeDEFAULT.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34939 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeHW_VRP.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34940 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34941 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_EXR.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34943 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_XR.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34945 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeJUNOS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34946 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeME1200_OS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34947 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNAM.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34947 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS-UCSM.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:34948 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:35007 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeONS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:35008 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSCOS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:35009 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSG500_OS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:35009 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeTIMOS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:35010 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUCOS.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:35010 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUNIX.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:35011 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeWLC.def" from classpath.
+2016-04-14 14:15:00  [ XDE ThreadPool 1:35011 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/inventoryDefaults
+2016-04-14 14:15:06  [ QuartzScheduler_Worker-2:41273 ] - [ INFO ]  xde capture data successfully
+2016-04-14 14:15:08  [ QuartzScheduler_Worker-2:42978 ] - [ INFO ]  Job group4.aclcommandoutput_group1 execution complete at  14:15:08 04/14/2016 and reports: null

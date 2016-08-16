@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job-scheduling-data xmlns="http://www.quartz-scheduler.org/xml/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.quartz-scheduler.org/xml/JobSchedulingData http://www.quartz-scheduler.org/xml/job_scheduling_data_1_8.xsd" version="1.8">
+<!-- 
+   <schedule>
+        <job>  
+           <name>asr9kCefUsage_group1</name>  
+           <group>group1</group>  
+           <description>asr9kCefUsage</description>  
+           <job-class>com.cisco.kta.shct.asr9kcefusage.asr9kcefusage</job-class>
+           <job-data-map>
+        <entry>
+            <key>packageID</key>
+            <value>shct_asr9k_cef_usage</value>
+        </entry>
+         <entry>
+            <key>functionName</key>
+            <value>procedure</value>
+        </entry>
+         <entry>
+            <key>paramStrings</key>
+            <value>asr9k%show cef platform oor location 0/0/cpu0 | in NR_LDI,show cef platform oor location 0/1/cpu0 | in NR_LDI,show cef platform oor location 0/2/cpu0 | in NR_LDI,show cef platform oor location 0/3/cpu0 | in NR_LDI,show cef platform oor location 0/4/cpu0 | in NR_LDI,show cef platform oor location 0/5/cpu0 | in NR_LDI,show cef platform oor location 0/6/cpu0 | in NR_LDI,show cef platform oor location 0/7/cpu0 | in NR_LDI%</value>
+        </entry>
+    </job-data-map>
+       </job>  
+       <trigger>  
+         <cron>
+              <name>trigger_1</name>     
+              <group>group1</group>     
+              <job-name>asr9kCefUsage_group1</job-name>     
+              <job-group>group1</job-group>
+             <cron-expression>0 * 22 * * ?</cron-expression>
+         </cron>   
+       </trigger>
+   </schedule>      
+  <schedule>
+        <job>  
+           <name>aclcommandoutput_group1</name>  
+           <group>group4</group>  
+           <description>aclcommandoutput</description>  
+           <job-class>com.cisco.kta.shct.aclcommandoutput.aclcommandoutput</job-class>
+           <job-data-map>
+        <entry>
+            <key>packageID</key>
+            <value>shct_info_capture</value>
+        </entry>
+         <entry>
+            <key>functionName</key>
+            <value>procedure</value>
+        </entry>
+         <entry>
+            <key>paramStrings</key>
+            <value>SH-SH-MS-CR-1.MAN%show access-lists LNStoAAA hardware ingress location 0/10/cPU0,show access-lists LNStoAAA hardware egress location 4/1/CPU0%</value>
+        </entry>
+    </job-data-map>
+       </job>  
+       <trigger>  
+         <cron>
+              <name>trigger_4</name>     
+              <group>group4</group>     
+              <job-name>aclcommandoutput_group1</job-name>     
+              <job-group>group4</job-group>
+             <cron-expression>0 */1 * * * ?</cron-expression>
+         </cron>   
+       </trigger>
+   </schedule>         
+  
+   <schedule>
+        <job>  
+           <name>asr9kUnicastFloodingClear_group1</name>  
+           <group>group6</group>  
+           <description>asr9kUnicastFloodingClear</description>  
+           <job-class>com.cisco.kta.shct.asr9kunicastflooding.asr9kunicastfloodingclear</job-class>
+           <job-data-map>
+        <entry>
+            <key>packageID</key>
+            <value>shct_asr9k_unicast_flooding_clear</value>
+        </entry>
+         <entry>
+            <key>functionName</key>
+            <value>procedure</value>
+        </entry>
+         <entry>
+            <key>paramStrings</key>
+            <value>SH-SH-KJ-SR-1.M2N.9010,SH-SH-YX-SR-2.M2N.9010,SH-SH-YX-SR-3.M2N.9010,SH-SH-PL-SR-1.M2N.9010,SH-SH-GB-SR-1.M2N.9010,SH-SH-WN-SR-1.M2N.9010,SH-SH-GB-SR-2.M2N.9010,SH-SH-WN-SR-2.M2N.9010,SH-SH-KAJ-SR-1.M2N.9010,SH-SH-KAJ-SR-2.M2N.9010,SH-SH-PP-SR-1.M2N.9010,SH-SH-HT-SR-1.M2N.9010,SH-SH-HT-SR-2.M2N.9010,SH-SH-XT-SR-1.M2N.9010,SH-SH-JSH-SR-1.M2N.9010,SH-SH-SJZ-SR-1.M2N.9010,SH-SH-JSH-SR-2.M2N.9010,SH-SH-SJZ-SR-3.M2N.9010,SH-SH-JY-SR-2.M2N.9010,SH-SH-BC-SR-1.M2N.9010,SH-SH-HM-SR-1.M2N.9010,SH-SH-JID-SR-1.M2N.9010,SH-SH-ML-SR-2.M2N.9010,SH-SH-BQ-SR-2.M2N.9010,SH-SH-CJX-SR-1.M2N.9010,SH-SH-CJX-SR-2.M2N.9010</value>
+        </entry>
+    </job-data-map>
+       </job>  
+       <trigger>  
+         <cron>
+              <name>trigger_6</name>     
+              <group>group6</group>     
+              <job-name>asr9kUnicastFloodingClear_group1</job-name>     
+              <job-group>group6</job-group>
+             <cron-expression>0 55 15 * * ?</cron-expression>
+         </cron>   
+       </trigger>
+   </schedule>     
+
+   <schedule>
+        <job>  
+           <name>asr9kUnicastFloodingClear_group2</name>  
+           <group>group7</group>  
+           <description>asr9kUnicastFloodingClear</description>  
+           <job-class>com.cisco.kta.shct.asr9kunicastflooding.asr9kunicastfloodingclear</job-class>
+           <job-data-map>
+        <entry>
+            <key>packageID</key>
+            <value>shct_asr9k_unicast_flooding_clear</value>
+        </entry>
+         <entry>
+            <key>functionName</key>
+            <value>procedure</value>
+        </entry>
+         <entry>
+            <key>paramStrings</key>
+            <value>SH-SH-YX-SR-1.M2N.9010,SH-SH-ZY-SR-1.M2N.9010,SH-SH-LC-SR-1.M2N.9010,SH-SH-XY-SR-1.M2N.9010,SH-SH-TS-SR-1.M2N.9010,SH-SH-JS-SR-1.M2N.9010,SH-SH-TS-SR-2.M2N.9010,SH-SH-CX-SR-1.M2N.9010,SH-SH-GL-SR-1.M2N.9010,SH-SH-SC-SR-1.M2N.9010,SH-SH-PP-SR-2.M2N.9010,SH-SH-PP-SR-3.M2N.9010,SH-SH-XZJZ-SR-1.M2N.9010,SH-SH-JY-SR-1.M2N.9010,SH-SH-DOC-SR-1.M2N.9010,SH-SH-SJZ-SR-2.M2N.9010,SH-SH-DOC-SR-2.M2N.9010,SH-SH-JSH-SR-3.M2N.9010,SH-SH-ZJD-SR-1.M2N.9010,SH-SH-ML-SR-1.M2N.9010,SH-SH-BQ-SR-1.M2N.9010,SH-SH-LHU-SR-1.M2N.9010,SH-SH-HM-SR-2.M2N.9010,SH-SH-GC-SR-1.M2N.9010,SH-SH-GC-SR-2.M2N.9010</value>
+        </entry>
+    </job-data-map>
+       </job>  
+       <trigger>  
+         <cron>
+              <name>trigger_7</name>     
+              <group>group7</group>     
+              <job-name>asr9kUnicastFloodingClear_group2</job-name>     
+              <job-group>group7</job-group>
+             <cron-expression>0 56 15 * * ?</cron-expression>
+         </cron>   
+       </trigger>
+   </schedule>  
+   
+
+   <schedule>
+        <job>  
+           <name>asr9kUnicastFloodingCapture_group1</name>  
+           <group>group8</group>  
+           <description>asr9kUnicastFloodingCapture</description>  
+           <job-class>com.cisco.kta.shct.asr9kunicastflooding.asr9kunicastfloodingcapture</job-class>
+           <job-data-map>
+        <entry>
+            <key>packageID</key>
+            <value>shct_asr9k_unicast_flooding_capture</value>
+        </entry>
+         <entry>
+            <key>functionName</key>
+            <value>procedure</value>
+        </entry>
+         <entry>
+            <key>paramStrings</key>
+            <value>SH-SH-KJ-SR-1.M2N.9010,SH-SH-YX-SR-2.M2N.9010,SH-SH-YX-SR-3.M2N.9010,SH-SH-PL-SR-1.M2N.9010,SH-SH-GB-SR-1.M2N.9010,SH-SH-WN-SR-1.M2N.9010,SH-SH-GB-SR-2.M2N.9010,SH-SH-WN-SR-2.M2N.9010,SH-SH-KAJ-SR-1.M2N.9010,SH-SH-KAJ-SR-2.M2N.9010,SH-SH-PP-SR-1.M2N.9010,SH-SH-HT-SR-1.M2N.9010,SH-SH-HT-SR-2.M2N.9010,SH-SH-XT-SR-1.M2N.9010,SH-SH-JSH-SR-1.M2N.9010,SH-SH-SJZ-SR-1.M2N.9010,SH-SH-JSH-SR-2.M2N.9010,SH-SH-SJZ-SR-3.M2N.9010,SH-SH-JY-SR-2.M2N.9010,SH-SH-BC-SR-1.M2N.9010,SH-SH-HM-SR-1.M2N.9010,SH-SH-JID-SR-1.M2N.9010,SH-SH-ML-SR-2.M2N.9010,SH-SH-BQ-SR-2.M2N.9010,SH-SH-CJX-SR-1.M2N.9010,SH-SH-CJX-SR-2.M2N.9010</value>
+        </entry>
+    </job-data-map>
+       </job>  
+       <trigger>  
+         <cron>
+              <name>trigger_8</name>     
+              <group>group8</group>     
+              <job-name>asr9kUnicastFloodingCapture_group1</job-name>     
+              <job-group>group8</job-group>
+             <cron-expression>0 00 16 * * ?</cron-expression>
+         </cron>   
+       </trigger>
+   </schedule>
+-->
+   <schedule>
+        <job>  
+           <name>asr9kUnicastFloodingCapture_group2</name>  
+           <group>group9</group>  
+           <description>asr9kUnicastFloodingCapture</description>  
+           <job-class>com.cisco.kta.shct.asr9kunicastflooding.asr9kunicastfloodingcapture</job-class>
+           <job-data-map>
+        <entry>
+            <key>packageID</key>
+            <value>shct_asr9k_unicast_flooding_capture</value>
+        </entry>
+         <entry>
+            <key>functionName</key>
+            <value>procedure</value>
+        </entry>
+         <entry>
+            <key>paramStrings</key>
+            <value>SH-SH-YX-SR-1.M2N.9010,SH-SH-ZY-SR-1.M2N.9010,SH-SH-LC-SR-1.M2N.9010,SH-SH-XY-SR-1.M2N.9010,SH-SH-TS-SR-1.M2N.9010,SH-SH-JS-SR-1.M2N.9010,SH-SH-TS-SR-2.M2N.9010,SH-SH-CX-SR-1.M2N.9010,SH-SH-GL-SR-1.M2N.9010,SH-SH-SC-SR-1.M2N.9010,SH-SH-PP-SR-2.M2N.9010,SH-SH-PP-SR-3.M2N.9010,SH-SH-XZJZ-SR-1.M2N.9010,SH-SH-JY-SR-1.M2N.9010,SH-SH-DOC-SR-1.M2N.9010,SH-SH-SJZ-SR-2.M2N.9010,SH-SH-DOC-SR-2.M2N.9010,SH-SH-JSH-SR-3.M2N.9010,SH-SH-ZJD-SR-1.M2N.9010,SH-SH-ML-SR-1.M2N.9010,SH-SH-BQ-SR-1.M2N.9010,SH-SH-LHU-SR-1.M2N.9010,SH-SH-HM-SR-2.M2N.9010,SH-SH-GC-SR-1.M2N.9010,SH-SH-GC-SR-2.M2N.9010</value>
+        </entry>
+    </job-data-map>
+       </job>  
+       <trigger>  
+         <cron>
+              <name>trigger_9</name>     
+              <group>group9</group>     
+              <job-name>asr9kUnicastFloodingCapture_group2</job-name>     
+              <job-group>group9</job-group>
+             <cron-expression>0 28 16 * * ?</cron-expression>
+         </cron>   
+       </trigger>
+   </schedule>      
+   
+</job-scheduling-data>

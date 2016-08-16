@@ -1,0 +1,377 @@
+2016-04-07 11:30:32  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-04-07 11:30:32  [ main:4 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-04-07 11:30:32  [ main:7 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-04-07 11:30:33  [ main:752 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-04-07 11:30:33  [ main:753 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-04-07 11:30:33  [ main:1031 ] - [ INFO ]  SessionManagerImpl initialized
+2016-04-07 11:30:33  [ main:1082 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-04-07 11:30:33  [ main:1087 ] - [ INFO ]  Starting intial XDE package load
+2016-04-07 11:30:33  [ main:1087 ] - [ INFO ]  Adding package for resource 7609_netdr_capture
+2016-04-07 11:30:33  [ main:1424 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-04-07 11:30:34  [ main:1824 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-04-07 11:30:34  [ main:1852 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-04-07 11:30:34  [ main:1947 ] - [ INFO ]  Adding package for resource shct_info_capture
+2016-04-07 11:30:34  [ main:2054 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-04-07 11:30:34  [ main:2335 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-04-07 11:30:35  [ main:2494 ] - [ INFO ]  Finished intial XDE package load
+2016-04-07 11:30:35  [ main:2517 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-04-07 11:30:35  [ main:2541 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-04-07 11:30:35  [ main:2833 ] - [ INFO ]  Start of validation problem output
+2016-04-07 11:30:35  [ main:2834 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-04-07 11:30:35  [ main:2834 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-04-07 11:30:35  [ main:2834 ] - [ INFO ]  Start of XEP binding output
+2016-04-07 11:30:35  [ main:2834 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-04-07 11:30:35  [ main:2854 ] - [ INFO ]  Started XDE Runtime in 2856 milliseconds
+2016-04-07 11:30:35  [ main:2876 ] - [ INFO ]  xde is initializing !
+2016-04-07 11:30:35  [ main:3056 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-04-07 11:30:35  [ main:3294 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-04-07 11:30:35  [ main:3295 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-04-07 11:30:35  [ main:3295 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-04-07 11:30:35  [ main:3296 ] - [ INFO ]  RAMJobStore initialized.
+2016-04-07 11:30:35  [ main:3297 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-04-07 11:30:35  [ main:3297 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-04-07 11:30:35  [ main:3297 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-04-07 11:30:35  [ main:3315 ] - [ INFO ]  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2016-04-07 11:30:36  [ main:3635 ] - [ INFO ]  Adding 3 jobs, 3 triggers.
+2016-04-07 11:30:36  [ main:3635 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-04-07 11:30:36  [ main:3636 ] - [ INFO ]  Adding job: group2.asr9kCefUsage_group2
+2016-04-07 11:30:36  [ main:3636 ] - [ INFO ]  Adding job: group3.asr9kCefUsage_group3
+2016-04-07 11:30:36  [ main:3637 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-04-07 11:30:36  [ QuartzScheduler_Worker-1:3650 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:30:36 04/07/2016
+2016-04-07 11:30:36  [ QuartzScheduler_Worker-1:3653 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:30:36 04/07/2016 and reports: null
+2016-04-07 11:31:35  [ QuartzScheduler_Worker-2:63308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:31:35 04/07/2016
+2016-04-07 11:31:35  [ QuartzScheduler_Worker-2:63309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:31:35 04/07/2016 and reports: null
+2016-04-07 11:32:00  [ QuartzScheduler_Worker-3:87488 ] - [ INFO ]  Job group1.asr9kCefUsage_group1 fired (by trigger group1.trigger_1) at:  11:32:00 04/07/2016
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88020 ] - [ INFO ]  Loaded fixed inventory defaults file "customDEFAULT.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88085 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeACSW.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88099 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASASW.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88100 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASR5K.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88100 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeCATOS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88103 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeDEFAULT.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88105 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeHW_VRP.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88106 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88106 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_EXR.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88108 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_XR.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88164 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeJUNOS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88165 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeME1200_OS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88166 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNAM.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88166 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS-UCSM.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88167 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88169 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeONS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88170 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSCOS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88171 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSG500_OS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88171 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeTIMOS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88172 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUCOS.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88173 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUNIX.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88208 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeWLC.def" from classpath.
+2016-04-07 11:32:00  [ XDE ThreadPool 1:88209 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/inventoryDefaults
+2016-04-07 11:32:33  [ XDE stats logger:121015 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 120238
+2016-04-07 11:32:35  [ QuartzScheduler_Worker-4:123307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:32:35 04/07/2016
+2016-04-07 11:32:35  [ QuartzScheduler_Worker-4:123308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:32:35 04/07/2016 and reports: null
+2016-04-07 11:33:33  [ XDE stats logger:181016 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:33:35  [ QuartzScheduler_Worker-5:183317 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:33:35 04/07/2016
+2016-04-07 11:33:35  [ QuartzScheduler_Worker-5:183318 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:33:35 04/07/2016 and reports: null
+2016-04-07 11:34:33  [ XDE stats logger:241017 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:34:35  [ QuartzScheduler_Worker-6:243308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:34:35 04/07/2016
+2016-04-07 11:34:35  [ QuartzScheduler_Worker-6:243309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:34:35 04/07/2016 and reports: null
+2016-04-07 11:35:33  [ XDE stats logger:301018 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:35:35  [ QuartzScheduler_Worker-7:303307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:35:35 04/07/2016
+2016-04-07 11:35:35  [ QuartzScheduler_Worker-7:303307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:35:35 04/07/2016 and reports: null
+2016-04-07 11:35:47  [ QuartzScheduler_Worker-3:314992 ] - [ INFO ]  xde capture data successfully
+2016-04-07 11:35:49  [ QuartzScheduler_Worker-3:316832 ] - [ INFO ]  Job group1.asr9kCefUsage_group1 execution complete at  11:35:49 04/07/2016 and reports: null
+2016-04-07 11:36:33  [ XDE stats logger:361019 ] - [ INFO ]  Requests Running 0, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:36:35  [ QuartzScheduler_Worker-8:363309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:36:35 04/07/2016
+2016-04-07 11:36:35  [ QuartzScheduler_Worker-8:363309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:36:35 04/07/2016 and reports: null
+2016-04-07 11:37:35  [ QuartzScheduler_Worker-9:423308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:37:35 04/07/2016
+2016-04-07 11:37:35  [ QuartzScheduler_Worker-9:423309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:37:35 04/07/2016 and reports: null
+2016-04-07 11:38:35  [ QuartzScheduler_Worker-10:483308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:38:35 04/07/2016
+2016-04-07 11:38:35  [ QuartzScheduler_Worker-10:483310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:38:35 04/07/2016 and reports: null
+2016-04-07 11:39:35  [ QuartzScheduler_Worker-11:543308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:39:35 04/07/2016
+2016-04-07 11:39:35  [ QuartzScheduler_Worker-11:543309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:39:35 04/07/2016 and reports: null
+2016-04-07 11:40:20  [ QuartzScheduler_Worker-12:587481 ] - [ INFO ]  Job group2.asr9kCefUsage_group2 fired (by trigger group2.trigger_2) at:  11:40:20 04/07/2016
+2016-04-07 11:40:33  [ XDE stats logger:601021 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 240002
+2016-04-07 11:40:35  [ QuartzScheduler_Worker-13:603308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:40:35 04/07/2016
+2016-04-07 11:40:35  [ QuartzScheduler_Worker-13:603308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:40:35 04/07/2016 and reports: null
+2016-04-07 11:41:33  [ XDE stats logger:661022 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:41:35  [ QuartzScheduler_Worker-14:663308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:41:35 04/07/2016
+2016-04-07 11:41:35  [ QuartzScheduler_Worker-14:663309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:41:35 04/07/2016 and reports: null
+2016-04-07 11:42:33  [ XDE stats logger:721023 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:42:35  [ QuartzScheduler_Worker-15:723306 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:42:35 04/07/2016
+2016-04-07 11:42:35  [ QuartzScheduler_Worker-15:723307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:42:35 04/07/2016 and reports: null
+2016-04-07 11:42:56  [ nioEventLoopGroup-2-6:743834 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:311)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-07 11:42:56  [ nioEventLoopGroup-2-6:743849 ] - [ WARN ]  Failed to match expected device output due to disconnected during expect :Connection reset by peer, current expect timeout 10000ms.
+Current output : 
+Current expects : % Access denied
+% Bad passwords
+% Login invalid
+% Authentication failed
+% Bad secrets
+sername[:\s]*\z
+assword[:\s]*\z
+[#>\$]\s*\z
+
+2016-04-07 11:42:56  [ QuartzScheduler_Worker-12:743863 ] - [ ERROR ]  <palError><deviceId>SH-SH-PP-SR-1.M2N.9010</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Failed to match expected device output due to disconnected during expect :Connection reset by peer, current expect timeout 10000ms.
+Current output : 
+Current expects : % Access denied
+% Bad passwords
+% Login invalid
+% Authentication failed
+% Bad secrets
+sername[:\s]*\z
+assword[:\s]*\z
+[#&gt;\$]\s*\z
+</message><handlerCode>ERROR_CONNECTION_CLOSED</handlerCode><errorMatchingOutput/><credential name="CLI_ADDRESS">124.75.0.97
+</credential><credential name="CLI_CONFIG_PROMPT_REPLACE_EXPRESION">($1.{0,30}|$1$2)\\([^\\)]+\\)$3\\s*\\z</credential><credential name="CLI_CONFIG_PROMPT_SEARCH_EXPRESION">(.{0,20})(.*)(\S)\s*$</credential><credential name="CLI_PORT">23</credential><credential name="CLI_PROMPT_CHANGE_EXPRESSION">^\s*([^&gt;#\(\\]+)</credential><credential name="CLI_PROMPT_EXPECT">[#&gt;\$]\s*\z</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">XR</credential><credential name="version">&lt;null&gt;</credential></palError>
+com.cisco.nm.pal.client.PALException: <palError><deviceId>SH-SH-PP-SR-1.M2N.9010</deviceId><code>HANDLER_ERROR</code><message>Handler Error com.cisco.nm.pal.customhandler.cli.CLIHandler.  Failed to match expected device output due to disconnected during expect :Connection reset by peer, current expect timeout 10000ms.
+Current output : 
+Current expects : % Access denied
+% Bad passwords
+% Login invalid
+% Authentication failed
+% Bad secrets
+sername[:\s]*\z
+assword[:\s]*\z
+[#&gt;\$]\s*\z
+</message><handlerCode>ERROR_CONNECTION_CLOSED</handlerCode><errorMatchingOutput/><credential name="CLI_ADDRESS">124.75.0.97
+</credential><credential name="CLI_CONFIG_PROMPT_REPLACE_EXPRESION">($1.{0,30}|$1$2)\\([^\\)]+\\)$3\\s*\\z</credential><credential name="CLI_CONFIG_PROMPT_SEARCH_EXPRESION">(.{0,20})(.*)(\S)\s*$</credential><credential name="CLI_PORT">23</credential><credential name="CLI_PROMPT_CHANGE_EXPRESSION">^\s*([^&gt;#\(\\]+)</credential><credential name="CLI_PROMPT_EXPECT">[#&gt;\$]\s*\z</credential><credential name="CLI_TRANSPORT">telnet</credential><credential name="software">IOS</credential><credential name="variant">XR</credential><credential name="version">&lt;null&gt;</credential></palError>
+	at XDE_ENGINE.[shct_asr9k_cef_usage]cef_usage/cef_usage.par@Rule0/HandlerChain/Handler2(cef_usage/cef_usage.par)
+	at XDE_ENGINE.[shct_asr9k_cef_usage]cef_usage/cef_usage.par@Rule0(cef_usage/cef_usage.par)
+	at XDE_ENGINE.[shct_asr9k_cef_usage]procedure.xde@chenfei:160317110037193.steps.chenfei:160317110153729.script(procedure.xde)
+	at XDE_ENGINE.[shct_asr9k_cef_usage]procedure.xde@chenfei:160317110037193.steps.chenfei:160317110153729(procedure.xde)
+	at com.cisco.nm.workflow.steps.HandlerStep$HandlerStepImpl.handlerException(HandlerStep.java:170)
+	at com.cisco.nm.pal.handler.HandlerCallbackWrapped.handlerException(HandlerCallbackWrapped.java:53)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:79)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.finishedIterationWithException(CLIHandlerImplBaseShowDocument.java:28)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.customhandler.cli.CLIHandlerImplBaseShowDocument.sessionRunnerCallbackException(CLIHandlerImplBaseShowDocument.java:156)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:294)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionStopSuccess(SessionRunnerWorker.java:230)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.stopSuccess(CliSessionContextBase.java:96)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator.stopSuccess(CliTransportCommunicator.java:226)
+	at com.cisco.nm.pal.cli.transport.telnet.CliTransportProviderAsyncTelnet.stop(CliTransportProviderAsyncTelnet.java:77)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicator.stopAsync(CliTransportCommunicator.java:111)
+	at com.cisco.nm.pal.cli.session.CliSessionContextBase.stopAsync(CliSessionContextBase.java:91)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSession.stopAsync(CliInteractiveSession.java:32)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.continueTidyUp(SessionRunnerWorker.java:263)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.callbackException(SessionRunnerWorker.java:225)
+	at com.cisco.nm.pal.cli.runner.SessionRunnerWorker.sessionFailure(SessionRunnerWorker.java:203)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSessionContextSessionSetup.finishedLoopWithException(CliInteractiveSessionContextSessionSetup.java:81)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSessionContextSessionSetup.finishedLoopWithException(CliInteractiveSessionContextSessionSetup.java:7)
+	at com.cisco.nm.util.async.AsyncWhileLoop.haltLoopWithException(AsyncWhileLoop.java:96)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSessionContextSessionSetup.phaseListFinishedFailure(CliInteractiveSessionContextSessionSetup.java:70)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSessionPhaseListRunner.finishedIterationWithException(CliInteractiveSessionPhaseListRunner.java:75)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSessionPhaseListRunner.finishedIterationWithException(CliInteractiveSessionPhaseListRunner.java:9)
+	at com.cisco.nm.util.async.AsyncIterator.haltIterationWithException(AsyncIterator.java:115)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSessionPhaseListRunner.phaseFinishedFailure(CliInteractiveSessionPhaseListRunner.java:64)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSessionLoginPhase$CliInteractiveSessionLoginPhaseImpl.finishedLoopWithException(CliInteractiveSessionLoginPhase.java:227)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSessionLoginPhase$CliInteractiveSessionLoginPhaseImpl.finishedLoopWithException(CliInteractiveSessionLoginPhase.java:53)
+	at com.cisco.nm.util.async.AsyncWhileLoop.haltLoopWithException(AsyncWhileLoop.java:96)
+	at com.cisco.nm.pal.cli.session.interactive.CliInteractiveSessionLoginPhase$CliInteractiveSessionLoginPhaseImpl.expectFailure(CliInteractiveSessionLoginPhase.java:213)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicatorExpectEngine$2.run(CliTransportCommunicatorExpectEngine.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.cisco.nm.run.threadpool.ThreadPool$PooledThread.run(ThreadPool.java:55)
+Caused by: com.cisco.nm.pal.cli.CliException: Failed to match expected device output due to disconnected during expect :Connection reset by peer, current expect timeout 10000ms.
+Current output : 
+Current expects : % Access denied
+% Bad passwords
+% Login invalid
+% Authentication failed
+% Bad secrets
+sername[:\s]*\z
+assword[:\s]*\z
+[#>\$]\s*\z
+
+	at com.cisco.nm.pal.cli.runner.CliCredentials.buildException(CliCredentials.java:360)
+	at com.cisco.nm.pal.cli.transport.CliTransportCommunicatorExpectEngine.transportDisconnected(CliTransportCommunicatorExpectEngine.java:122)
+	at com.cisco.nm.pal.cli.transport.telnet.TelnetInputStream.exceptionCaught(TelnetInputStream.java:260)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:271)
+	at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:249)
+	at io.netty.channel.DefaultChannelPipeline.fireExceptionCaught(DefaultChannelPipeline.java:775)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.handleReadException(AbstractNioByteChannel.java:82)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:156)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:311)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	... 7 more
+2016-04-07 11:43:33  [ XDE stats logger:781023 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60000
+2016-04-07 11:43:35  [ QuartzScheduler_Worker-16:783308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:43:35 04/07/2016
+2016-04-07 11:43:35  [ QuartzScheduler_Worker-16:783311 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:43:35 04/07/2016 and reports: null
+2016-04-07 11:44:33  [ XDE stats logger:841024 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:44:35  [ QuartzScheduler_Worker-17:843306 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:44:35 04/07/2016
+2016-04-07 11:44:35  [ QuartzScheduler_Worker-17:843307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:44:35 04/07/2016 and reports: null
+2016-04-07 11:45:33  [ XDE stats logger:901024 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60000
+2016-04-07 11:45:35  [ QuartzScheduler_Worker-18:903312 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:45:35 04/07/2016
+2016-04-07 11:45:35  [ QuartzScheduler_Worker-18:903312 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:45:35 04/07/2016 and reports: null
+2016-04-07 11:46:33  [ XDE stats logger:961025 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:46:35  [ QuartzScheduler_Worker-19:963309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:46:35 04/07/2016
+2016-04-07 11:46:35  [ QuartzScheduler_Worker-19:963310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:46:35 04/07/2016 and reports: null
+2016-04-07 11:47:33  [ XDE stats logger:1021026 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:47:35  [ QuartzScheduler_Worker-20:1023310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:47:35 04/07/2016
+2016-04-07 11:47:35  [ QuartzScheduler_Worker-20:1023311 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:47:35 04/07/2016 and reports: null
+2016-04-07 11:48:33  [ XDE stats logger:1081028 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60002
+2016-04-07 11:48:35  [ QuartzScheduler_Worker-21:1083308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:48:35 04/07/2016
+2016-04-07 11:48:35  [ QuartzScheduler_Worker-21:1083308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:48:35 04/07/2016 and reports: null
+2016-04-07 11:49:05  [ QuartzScheduler_Worker-12:1112565 ] - [ INFO ]  xde capture data successfully
+2016-04-07 11:49:09  [ QuartzScheduler_Worker-12:1116800 ] - [ INFO ]  Job group2.asr9kCefUsage_group2 execution complete at  11:49:09 04/07/2016 and reports: null
+2016-04-07 11:49:33  [ XDE stats logger:1141029 ] - [ INFO ]  Requests Running 0, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:49:35  [ QuartzScheduler_Worker-22:1143308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:49:35 04/07/2016
+2016-04-07 11:49:35  [ QuartzScheduler_Worker-22:1143308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:49:35 04/07/2016 and reports: null
+2016-04-07 11:50:35  [ QuartzScheduler_Worker-23:1203309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:50:35 04/07/2016
+2016-04-07 11:50:35  [ QuartzScheduler_Worker-23:1203309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:50:35 04/07/2016 and reports: null
+2016-04-07 11:50:40  [ QuartzScheduler_Worker-24:1207480 ] - [ INFO ]  Job group3.asr9kCefUsage_group3 fired (by trigger group3.trigger_3) at:  11:50:40 04/07/2016
+2016-04-07 11:51:33  [ XDE stats logger:1261031 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 120002
+2016-04-07 11:51:35  [ QuartzScheduler_Worker-25:1263307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:51:35 04/07/2016
+2016-04-07 11:51:35  [ QuartzScheduler_Worker-25:1263308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:51:35 04/07/2016 and reports: null
+2016-04-07 11:52:33  [ XDE stats logger:1321032 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:52:35  [ QuartzScheduler_Worker-26:1323307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:52:35 04/07/2016
+2016-04-07 11:52:35  [ QuartzScheduler_Worker-26:1323308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:52:35 04/07/2016 and reports: null
+2016-04-07 11:53:33  [ XDE stats logger:1381033 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:53:35  [ QuartzScheduler_Worker-27:1383310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:53:35 04/07/2016
+2016-04-07 11:53:35  [ QuartzScheduler_Worker-27:1383310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:53:35 04/07/2016 and reports: null
+2016-04-07 11:54:33  [ XDE stats logger:1441034 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:54:35  [ QuartzScheduler_Worker-28:1443309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:54:35 04/07/2016
+2016-04-07 11:54:35  [ QuartzScheduler_Worker-28:1443309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:54:35 04/07/2016 and reports: null
+2016-04-07 11:55:33  [ XDE stats logger:1501035 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:55:35  [ QuartzScheduler_Worker-29:1503308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:55:35 04/07/2016
+2016-04-07 11:55:35  [ QuartzScheduler_Worker-29:1503309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:55:35 04/07/2016 and reports: null
+2016-04-07 11:56:33  [ XDE stats logger:1561045 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60010
+2016-04-07 11:56:35  [ QuartzScheduler_Worker-30:1563307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:56:35 04/07/2016
+2016-04-07 11:56:35  [ QuartzScheduler_Worker-30:1563308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:56:35 04/07/2016 and reports: null
+2016-04-07 11:56:55  [ QuartzScheduler_Worker-24:1583322 ] - [ INFO ]  xde capture data successfully
+2016-04-07 11:56:56  [ QuartzScheduler_Worker-24:1583674 ] - [ INFO ]  Job group3.asr9kCefUsage_group3 execution complete at  11:56:56 04/07/2016 and reports: null
+2016-04-07 11:57:33  [ XDE stats logger:1621046 ] - [ INFO ]  Requests Running 0, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 11:57:35  [ QuartzScheduler_Worker-31:1623308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:57:35 04/07/2016
+2016-04-07 11:57:35  [ QuartzScheduler_Worker-31:1623309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:57:35 04/07/2016 and reports: null
+2016-04-07 11:58:35  [ QuartzScheduler_Worker-32:1683308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:58:35 04/07/2016
+2016-04-07 11:58:35  [ QuartzScheduler_Worker-32:1683308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:58:35 04/07/2016 and reports: null
+2016-04-07 11:59:35  [ QuartzScheduler_Worker-33:1743308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:59:35 04/07/2016
+2016-04-07 11:59:35  [ QuartzScheduler_Worker-33:1743309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:59:35 04/07/2016 and reports: null
+2016-04-07 12:00:35  [ QuartzScheduler_Worker-34:1803307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:00:35 04/07/2016
+2016-04-07 12:00:35  [ QuartzScheduler_Worker-34:1803308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:00:35 04/07/2016 and reports: null
+2016-04-07 12:01:35  [ QuartzScheduler_Worker-35:1863308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:01:35 04/07/2016
+2016-04-07 12:01:35  [ QuartzScheduler_Worker-35:1863309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:01:35 04/07/2016 and reports: null
+2016-04-07 12:02:35  [ QuartzScheduler_Worker-36:1923308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:02:35 04/07/2016
+2016-04-07 12:02:35  [ QuartzScheduler_Worker-36:1923309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:02:35 04/07/2016 and reports: null
+2016-04-07 12:03:35  [ QuartzScheduler_Worker-37:1983308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:03:35 04/07/2016
+2016-04-07 12:03:35  [ QuartzScheduler_Worker-37:1983309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:03:35 04/07/2016 and reports: null
+2016-04-07 12:04:35  [ QuartzScheduler_Worker-38:2043307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:04:35 04/07/2016
+2016-04-07 12:04:35  [ QuartzScheduler_Worker-38:2043309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:04:35 04/07/2016 and reports: null
+2016-04-07 12:05:35  [ QuartzScheduler_Worker-39:2103307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:05:35 04/07/2016
+2016-04-07 12:05:35  [ QuartzScheduler_Worker-39:2103308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:05:35 04/07/2016 and reports: null
+2016-04-07 12:06:35  [ QuartzScheduler_Worker-40:2163308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:06:35 04/07/2016
+2016-04-07 12:06:35  [ QuartzScheduler_Worker-40:2163309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:06:35 04/07/2016 and reports: null
+2016-04-07 12:07:35  [ QuartzScheduler_Worker-41:2223308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:07:35 04/07/2016
+2016-04-07 12:07:35  [ QuartzScheduler_Worker-41:2223309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:07:35 04/07/2016 and reports: null
+2016-04-07 12:08:35  [ QuartzScheduler_Worker-42:2283307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:08:35 04/07/2016
+2016-04-07 12:08:35  [ QuartzScheduler_Worker-42:2283308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:08:35 04/07/2016 and reports: null
+2016-04-07 12:09:35  [ QuartzScheduler_Worker-43:2343308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:09:35 04/07/2016
+2016-04-07 12:09:35  [ QuartzScheduler_Worker-43:2343309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:09:35 04/07/2016 and reports: null
+2016-04-07 12:10:35  [ QuartzScheduler_Worker-44:2403309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:10:35 04/07/2016
+2016-04-07 12:10:35  [ QuartzScheduler_Worker-44:2403310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:10:35 04/07/2016 and reports: null
+2016-04-07 12:11:35  [ QuartzScheduler_Worker-45:2463309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:11:35 04/07/2016
+2016-04-07 12:11:35  [ QuartzScheduler_Worker-45:2463309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:11:35 04/07/2016 and reports: null
+2016-04-07 12:12:35  [ QuartzScheduler_Worker-46:2523307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:12:35 04/07/2016
+2016-04-07 12:12:35  [ QuartzScheduler_Worker-46:2523308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:12:35 04/07/2016 and reports: null
+2016-04-07 12:13:35  [ QuartzScheduler_Worker-47:2583307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:13:35 04/07/2016
+2016-04-07 12:13:35  [ QuartzScheduler_Worker-47:2583308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:13:35 04/07/2016 and reports: null
+2016-04-07 12:14:35  [ QuartzScheduler_Worker-48:2643318 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:14:35 04/07/2016
+2016-04-07 12:14:35  [ QuartzScheduler_Worker-48:2643318 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:14:35 04/07/2016 and reports: null
+2016-04-07 12:15:35  [ QuartzScheduler_Worker-49:2703308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:15:35 04/07/2016
+2016-04-07 12:15:35  [ QuartzScheduler_Worker-49:2703309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:15:35 04/07/2016 and reports: null
+2016-04-07 12:16:35  [ QuartzScheduler_Worker-50:2763308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:16:35 04/07/2016
+2016-04-07 12:16:35  [ QuartzScheduler_Worker-50:2763309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:16:35 04/07/2016 and reports: null
+2016-04-07 12:17:35  [ QuartzScheduler_Worker-51:2823307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:17:35 04/07/2016
+2016-04-07 12:17:35  [ QuartzScheduler_Worker-51:2823308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:17:35 04/07/2016 and reports: null
+2016-04-07 12:18:35  [ QuartzScheduler_Worker-52:2883307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:18:35 04/07/2016
+2016-04-07 12:18:35  [ QuartzScheduler_Worker-52:2883308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:18:35 04/07/2016 and reports: null
+2016-04-07 12:19:35  [ QuartzScheduler_Worker-53:2943307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:19:35 04/07/2016
+2016-04-07 12:19:35  [ QuartzScheduler_Worker-53:2943308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:19:35 04/07/2016 and reports: null
+2016-04-07 12:20:35  [ QuartzScheduler_Worker-54:3003308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:20:35 04/07/2016
+2016-04-07 12:20:35  [ QuartzScheduler_Worker-54:3003309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:20:35 04/07/2016 and reports: null
+2016-04-07 12:21:35  [ QuartzScheduler_Worker-55:3063309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:21:35 04/07/2016
+2016-04-07 12:21:35  [ QuartzScheduler_Worker-55:3063310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:21:35 04/07/2016 and reports: null
+2016-04-07 12:22:35  [ QuartzScheduler_Worker-56:3123309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:22:35 04/07/2016
+2016-04-07 12:22:35  [ QuartzScheduler_Worker-56:3123310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:22:35 04/07/2016 and reports: null
+2016-04-07 12:23:35  [ QuartzScheduler_Worker-57:3183307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:23:35 04/07/2016
+2016-04-07 12:23:35  [ QuartzScheduler_Worker-57:3183308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:23:35 04/07/2016 and reports: null
+2016-04-07 12:24:35  [ QuartzScheduler_Worker-58:3243309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:24:35 04/07/2016
+2016-04-07 12:24:35  [ QuartzScheduler_Worker-58:3243309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:24:35 04/07/2016 and reports: null
+2016-04-07 12:25:35  [ QuartzScheduler_Worker-59:3303309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:25:35 04/07/2016
+2016-04-07 12:25:35  [ QuartzScheduler_Worker-59:3303309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:25:35 04/07/2016 and reports: null
+2016-04-07 12:26:35  [ QuartzScheduler_Worker-60:3363308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:26:35 04/07/2016
+2016-04-07 12:26:35  [ QuartzScheduler_Worker-60:3363308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:26:35 04/07/2016 and reports: null
+2016-04-07 12:27:35  [ QuartzScheduler_Worker-61:3423308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:27:35 04/07/2016
+2016-04-07 12:27:35  [ QuartzScheduler_Worker-61:3423308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:27:35 04/07/2016 and reports: null
+2016-04-07 12:28:35  [ QuartzScheduler_Worker-62:3483307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:28:35 04/07/2016
+2016-04-07 12:28:35  [ QuartzScheduler_Worker-62:3483308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:28:35 04/07/2016 and reports: null
+2016-04-07 12:29:35  [ QuartzScheduler_Worker-63:3543307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:29:35 04/07/2016
+2016-04-07 12:29:35  [ QuartzScheduler_Worker-63:3543308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:29:35 04/07/2016 and reports: null
+2016-04-07 12:30:35  [ QuartzScheduler_Worker-64:3603309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:30:35 04/07/2016
+2016-04-07 12:30:35  [ QuartzScheduler_Worker-64:3603310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:30:35 04/07/2016 and reports: null
+2016-04-07 12:31:35  [ QuartzScheduler_Worker-65:3663307 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:31:35 04/07/2016
+2016-04-07 12:31:35  [ QuartzScheduler_Worker-65:3663308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:31:35 04/07/2016 and reports: null
+2016-04-07 12:32:00  [ QuartzScheduler_Worker-66:3687483 ] - [ INFO ]  Job group1.asr9kCefUsage_group1 fired (by trigger group1.trigger_1) at:  12:32:00 04/07/2016
+2016-04-07 12:32:33  [ XDE stats logger:3721069 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 2100023
+2016-04-07 12:32:35  [ QuartzScheduler_Worker-67:3723309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:32:35 04/07/2016
+2016-04-07 12:32:35  [ QuartzScheduler_Worker-67:3723309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:32:35 04/07/2016 and reports: null
+2016-04-07 12:33:33  [ XDE stats logger:3781071 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 12:33:35  [ QuartzScheduler_Worker-68:3783309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:33:35 04/07/2016
+2016-04-07 12:33:35  [ QuartzScheduler_Worker-68:3783310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:33:35 04/07/2016 and reports: null
+2016-04-07 12:34:33  [ XDE stats logger:3841072 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60002
+2016-04-07 12:34:35  [ QuartzScheduler_Worker-69:3843309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:34:35 04/07/2016
+2016-04-07 12:34:35  [ QuartzScheduler_Worker-69:3843309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:34:35 04/07/2016 and reports: null
+2016-04-07 12:35:33  [ XDE stats logger:3901073 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 12:35:35  [ QuartzScheduler_Worker-70:3903308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:35:35 04/07/2016
+2016-04-07 12:35:35  [ QuartzScheduler_Worker-70:3903308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:35:35 04/07/2016 and reports: null
+2016-04-07 12:35:45  [ QuartzScheduler_Worker-66:3912785 ] - [ INFO ]  xde capture data successfully
+2016-04-07 12:35:45  [ QuartzScheduler_Worker-66:3913459 ] - [ INFO ]  Job group1.asr9kCefUsage_group1 execution complete at  12:35:45 04/07/2016 and reports: null
+2016-04-07 12:36:33  [ XDE stats logger:3961074 ] - [ INFO ]  Requests Running 0, Requests Waiting 0, Thread Idle Time 60001
+2016-04-07 12:36:35  [ QuartzScheduler_Worker-71:3963309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:36:35 04/07/2016
+2016-04-07 12:36:35  [ QuartzScheduler_Worker-71:3963310 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:36:35 04/07/2016 and reports: null
+2016-04-07 12:37:35  [ QuartzScheduler_Worker-72:4023308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:37:35 04/07/2016
+2016-04-07 12:37:35  [ QuartzScheduler_Worker-72:4023309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:37:35 04/07/2016 and reports: null
+2016-04-07 12:38:35  [ QuartzScheduler_Worker-73:4083308 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  12:38:35 04/07/2016
+2016-04-07 12:38:35  [ QuartzScheduler_Worker-73:4083309 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  12:38:35 04/07/2016 and reports: null

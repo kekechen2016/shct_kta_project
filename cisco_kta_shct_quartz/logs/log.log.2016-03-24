@@ -1,0 +1,314 @@
+2016-03-24 10:39:21  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-03-24 10:39:21  [ main:11 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-03-24 10:39:21  [ main:14 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-03-24 10:39:22  [ main:1253 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-03-24 10:39:22  [ main:1258 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-03-24 10:39:22  [ main:1524 ] - [ INFO ]  SessionManagerImpl initialized
+2016-03-24 10:39:22  [ main:1575 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-03-24 10:39:22  [ main:1579 ] - [ INFO ]  Starting intial XDE package load
+2016-03-24 10:39:22  [ main:1579 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-03-24 10:39:23  [ main:1896 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-03-24 10:39:23  [ main:2120 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-03-24 10:39:23  [ main:2194 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-03-24 10:39:23  [ main:2565 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-03-24 10:39:24  [ main:2839 ] - [ INFO ]  Finished intial XDE package load
+2016-03-24 10:39:24  [ main:2839 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-03-24 10:39:24  [ main:2868 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-03-24 10:39:24  [ main:3232 ] - [ INFO ]  Start of validation problem output
+2016-03-24 10:39:24  [ main:3233 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-03-24 10:39:24  [ main:3233 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-03-24 10:39:24  [ main:3233 ] - [ INFO ]  Start of XEP binding output
+2016-03-24 10:39:24  [ main:3233 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-03-24 10:39:24  [ main:3247 ] - [ INFO ]  Started XDE Runtime in 3249 milliseconds
+2016-03-24 10:39:24  [ main:3259 ] - [ INFO ]  xde is initializing !
+2016-03-24 10:39:24  [ main:3361 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-03-24 10:39:24  [ main:3628 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-03-24 10:39:24  [ main:3628 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-03-24 10:39:25  [ main:3629 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-03-24 10:39:25  [ main:3630 ] - [ INFO ]  RAMJobStore initialized.
+2016-03-24 10:39:25  [ main:3630 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-03-24 10:39:25  [ main:3630 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-03-24 10:39:25  [ main:3630 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-03-24 10:39:25  [ main:3683 ] - [ INFO ]  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2016-03-24 10:39:25  [ main:4009 ] - [ INFO ]  Adding 3 jobs, 3 triggers.
+2016-03-24 10:39:25  [ main:4010 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-03-24 10:39:25  [ main:4010 ] - [ INFO ]  Adding job: group2.asr9kCefUsage_group2
+2016-03-24 10:39:25  [ main:4011 ] - [ ERROR ]  Error scheduling jobs: A new job defined without any triggers must be durable: group2.asr9kCefUsage_group2
+org.quartz.SchedulerException: A new job defined without any triggers must be durable: group2.asr9kCefUsage_group2
+	at org.quartz.xml.XMLSchedulingDataProcessor.scheduleJobs(XMLSchedulingDataProcessor.java:1022)
+	at org.quartz.xml.XMLSchedulingDataProcessor.processFileAndScheduleJobs(XMLSchedulingDataProcessor.java:843)
+	at org.quartz.plugins.xml.XMLSchedulingDataProcessorPlugin.processFile(XMLSchedulingDataProcessorPlugin.java:319)
+	at org.quartz.plugins.xml.XMLSchedulingDataProcessorPlugin.start(XMLSchedulingDataProcessorPlugin.java:246)
+	at org.quartz.plugins.SchedulerPluginWithUserTransactionSupport.start(SchedulerPluginWithUserTransactionSupport.java:144)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:2407)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:568)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:142)
+	at com.cisco.kta.shct.mainjob.quartz.mainprocedure.main(mainprocedure.java:19)
+2016-03-24 10:39:25  [ main:4045 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-03-24 10:39:25  [ QuartzScheduler_Worker-1:4059 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:39:25 03/24/2016
+2016-03-24 10:39:25  [ QuartzScheduler_Worker-1:4060 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:39:25 03/24/2016 and reports: null
+2016-03-24 10:41:31  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-03-24 10:41:31  [ main:37 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-03-24 10:41:31  [ main:38 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-03-24 10:41:32  [ main:668 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-03-24 10:41:32  [ main:669 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-03-24 10:41:32  [ main:867 ] - [ INFO ]  SessionManagerImpl initialized
+2016-03-24 10:41:32  [ main:926 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-03-24 10:41:32  [ main:930 ] - [ INFO ]  Starting intial XDE package load
+2016-03-24 10:41:32  [ main:930 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-03-24 10:41:33  [ main:1193 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-03-24 10:41:33  [ main:1361 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-03-24 10:41:33  [ main:1400 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-03-24 10:41:33  [ main:1559 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-03-24 10:41:33  [ main:1651 ] - [ INFO ]  Finished intial XDE package load
+2016-03-24 10:41:33  [ main:1651 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-03-24 10:41:33  [ main:1654 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-03-24 10:41:33  [ main:1814 ] - [ INFO ]  Start of validation problem output
+2016-03-24 10:41:33  [ main:1814 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-03-24 10:41:33  [ main:1814 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-03-24 10:41:33  [ main:1814 ] - [ INFO ]  Start of XEP binding output
+2016-03-24 10:41:33  [ main:1814 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-03-24 10:41:33  [ main:1839 ] - [ INFO ]  Started XDE Runtime in 1840 milliseconds
+2016-03-24 10:41:33  [ main:1850 ] - [ INFO ]  xde is initializing !
+2016-03-24 10:41:33  [ main:1947 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-03-24 10:41:34  [ main:2408 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-03-24 10:41:34  [ main:2408 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-03-24 10:41:34  [ main:2409 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-03-24 10:41:34  [ main:2410 ] - [ INFO ]  RAMJobStore initialized.
+2016-03-24 10:41:34  [ main:2410 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-03-24 10:41:34  [ main:2410 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-03-24 10:41:34  [ main:2410 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-03-24 10:41:34  [ main:2445 ] - [ INFO ]  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2016-03-24 10:41:34  [ main:2629 ] - [ INFO ]  Adding 3 jobs, 3 triggers.
+2016-03-24 10:41:34  [ main:2629 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-03-24 10:41:34  [ main:2630 ] - [ INFO ]  Adding job: group2.asr9kCefUsage_group2
+2016-03-24 10:41:34  [ main:2630 ] - [ INFO ]  Adding job: group3.asr9kCefUsage_group3
+2016-03-24 10:41:34  [ main:2631 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-03-24 10:41:34  [ QuartzScheduler_Worker-1:2657 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:41:34 03/24/2016
+2016-03-24 10:41:34  [ QuartzScheduler_Worker-1:2658 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:41:34 03/24/2016 and reports: null
+2016-03-24 10:42:00  [ QuartzScheduler_Worker-2:28146 ] - [ INFO ]  Job group1.asr9kCefUsage_group1 fired (by trigger group1.trigger_1) at:  10:42:00 03/24/2016
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28725 ] - [ INFO ]  Loaded fixed inventory defaults file "customDEFAULT.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28741 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeACSW.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28742 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASASW.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28743 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASR5K.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28743 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeCATOS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28745 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeDEFAULT.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28781 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeHW_VRP.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28783 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28784 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_EXR.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28786 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_XR.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28788 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeJUNOS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28788 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeME1200_OS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28789 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNAM.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28790 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS-UCSM.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28790 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28811 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeONS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28813 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSCOS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28814 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSG500_OS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28814 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeTIMOS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28815 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUCOS.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28816 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUNIX.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28845 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeWLC.def" from classpath.
+2016-03-24 10:42:00  [ XDE ThreadPool 1:28846 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/inventoryDefaults
+2016-03-24 10:42:20  [ QuartzScheduler_Worker-3:48145 ] - [ INFO ]  Job group2.asr9kCefUsage_group2 fired (by trigger group2.trigger_2) at:  10:42:20 03/24/2016
+2016-03-24 10:42:32  [ XDE stats logger:60862 ] - [ INFO ]  Requests Running 2, Requests Waiting 0, Thread Idle Time 60175
+2016-03-24 10:42:34  [ QuartzScheduler_Worker-4:62414 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:42:34 03/24/2016
+2016-03-24 10:42:34  [ QuartzScheduler_Worker-4:62414 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:42:34 03/24/2016 and reports: null
+2016-03-24 10:42:40  [ QuartzScheduler_Worker-5:68147 ] - [ INFO ]  Job group3.asr9kCefUsage_group3 fired (by trigger group3.trigger_3) at:  10:42:40 03/24/2016
+2016-03-24 10:43:32  [ XDE stats logger:120863 ] - [ INFO ]  Requests Running 3, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 10:43:34  [ QuartzScheduler_Worker-6:122415 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:43:34 03/24/2016
+2016-03-24 10:43:34  [ QuartzScheduler_Worker-6:122416 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:43:34 03/24/2016 and reports: null
+2016-03-24 10:44:00  [ QuartzScheduler_Worker-7:148150 ] - [ INFO ]  Job group1.asr9kCefUsage_group1 fired (by trigger group1.trigger_1) at:  10:44:00 03/24/2016
+2016-03-24 10:44:20  [ QuartzScheduler_Worker-8:168144 ] - [ INFO ]  Job group2.asr9kCefUsage_group2 fired (by trigger group2.trigger_2) at:  10:44:20 03/24/2016
+2016-03-24 10:44:32  [ XDE stats logger:180864 ] - [ INFO ]  Requests Running 5, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 10:44:34  [ QuartzScheduler_Worker-9:182414 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:44:34 03/24/2016
+2016-03-24 10:44:34  [ QuartzScheduler_Worker-9:182414 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:44:34 03/24/2016 and reports: null
+2016-03-24 10:44:40  [ QuartzScheduler_Worker-10:188144 ] - [ INFO ]  Job group3.asr9kCefUsage_group3 fired (by trigger group3.trigger_3) at:  10:44:40 03/24/2016
+2016-03-24 10:45:32  [ XDE stats logger:240864 ] - [ INFO ]  Requests Running 6, Requests Waiting 0, Thread Idle Time 60000
+2016-03-24 10:45:34  [ QuartzScheduler_Worker-11:242414 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:45:34 03/24/2016
+2016-03-24 10:45:34  [ QuartzScheduler_Worker-11:242415 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:45:34 03/24/2016 and reports: null
+2016-03-24 10:46:00  [ QuartzScheduler_Worker-12:268149 ] - [ INFO ]  Job group1.asr9kCefUsage_group1 fired (by trigger group1.trigger_1) at:  10:46:00 03/24/2016
+2016-03-24 10:46:02  [ XDE ThreadPool 8:270881 ] - [ WARN ]  Failed to match expected device output due to expect timeout, current expect timeout 10000ms.
+Current output : 
+Current expects : % Access denied
+% Bad passwords
+% Login invalid
+% Authentication failed
+% Bad secrets
+sername[:\s]*\z
+assword[:\s]*\z
+[#>\$]\s*\z
+
+2016-03-24 10:46:02  [ QuartzScheduler_Worker-8:270894 ] - [ INFO ]  program is finished
+2016-03-24 10:46:02  [ QuartzScheduler_Worker-8:270898 ] - [ INFO ]  Job group2.asr9kCefUsage_group2 execution complete at  10:46:02 03/24/2016 and reports: null
+2016-03-24 10:46:20  [ QuartzScheduler_Worker-13:288147 ] - [ INFO ]  Job group2.asr9kCefUsage_group2 fired (by trigger group2.trigger_2) at:  10:46:20 03/24/2016
+2016-03-24 10:46:32  [ XDE stats logger:300866 ] - [ INFO ]  Requests Running 7, Requests Waiting 0, Thread Idle Time 60002
+2016-03-24 10:46:34  [ QuartzScheduler_Worker-14:302413 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:46:34 03/24/2016
+2016-03-24 10:46:34  [ QuartzScheduler_Worker-14:302414 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:46:34 03/24/2016 and reports: null
+2016-03-24 10:46:40  [ QuartzScheduler_Worker-15:308145 ] - [ INFO ]  Job group3.asr9kCefUsage_group3 fired (by trigger group3.trigger_3) at:  10:46:40 03/24/2016
+2016-03-24 10:48:06  [ main:0 ] - [ INFO ]  Starting XDE Runtime at /root/xdeRuntime
+2016-03-24 10:48:06  [ main:3 ] - [ INFO ]  XDE Integration version: 3.0.32
+2016-03-24 10:48:06  [ main:5 ] - [ INFO ]  PAL Integration version: 3.0.32
+2016-03-24 10:48:07  [ main:512 ] - [ INFO ]  XDE standard package location: /root/xdeRuntime/packages/std
+2016-03-24 10:48:07  [ main:513 ] - [ INFO ]  XDE site package location: /root/xdeRuntime/packages/site
+2016-03-24 10:48:07  [ main:692 ] - [ INFO ]  SessionManagerImpl initialized
+2016-03-24 10:48:07  [ main:737 ] - [ INFO ]  Started SNMPOperationService with configuration: 
+Maximum In Progress Operations: 300
+Maximum In Progress Tasks: 300
+Maximum Duplicate Queued Tasks: 2
+Polling Tasks executed in seperate SNMP4J instance: true
+2016-03-24 10:48:07  [ main:741 ] - [ INFO ]  Starting intial XDE package load
+2016-03-24 10:48:07  [ main:741 ] - [ INFO ]  Adding package for resource BasicInfoJob
+2016-03-24 10:48:08  [ main:1084 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/lib/ext
+2016-03-24 10:48:08  [ main:1250 ] - [ INFO ]  Adding package for resource shct_asr9k_cef_usage
+2016-03-24 10:48:08  [ main:1292 ] - [ INFO ]  Adding package for resource shct_iosxr_transceiver_power
+2016-03-24 10:48:08  [ main:1489 ] - [ INFO ]  Adding package for resource xde_project_1
+2016-03-24 10:48:08  [ main:1618 ] - [ INFO ]  Finished intial XDE package load
+2016-03-24 10:48:08  [ main:1619 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/std
+2016-03-24 10:48:08  [ main:1626 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/packages/site
+2016-03-24 10:48:08  [ main:1801 ] - [ INFO ]  Start of validation problem output
+2016-03-24 10:48:08  [ main:1801 ] - [ INFO ]  End of validation problem output (0 errors, 0 warnings).
+2016-03-24 10:48:08  [ main:1801 ] - [ INFO ]  No validation problems detected in the xDE runtime repository
+2016-03-24 10:48:08  [ main:1801 ] - [ INFO ]  Start of XEP binding output
+2016-03-24 10:48:08  [ main:1801 ] - [ INFO ]  End of XEP binding output (0 bindings).
+2016-03-24 10:48:08  [ main:1819 ] - [ INFO ]  Started XDE Runtime in 1820 milliseconds
+2016-03-24 10:48:08  [ main:1834 ] - [ INFO ]  xde is initializing !
+2016-03-24 10:48:08  [ main:1878 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2016-03-24 10:48:08  [ main:1914 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-03-24 10:48:08  [ main:1914 ] - [ INFO ]  Quartz Scheduler v.2.2.2 created.
+2016-03-24 10:48:08  [ main:1915 ] - [ INFO ]  Registering Quartz Job Initialization Plug-in.
+2016-03-24 10:48:08  [ main:1916 ] - [ INFO ]  RAMJobStore initialized.
+2016-03-24 10:48:08  [ main:1916 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.2) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 100 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-03-24 10:48:08  [ main:1917 ] - [ INFO ]  Quartz scheduler 'QuartzScheduler' initialized from default file in current working dir: 'quartz.properties'
+2016-03-24 10:48:08  [ main:1917 ] - [ INFO ]  Quartz scheduler version: 2.2.2
+2016-03-24 10:48:08  [ main:1950 ] - [ INFO ]  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2016-03-24 10:48:09  [ main:2165 ] - [ INFO ]  Adding 3 jobs, 3 triggers.
+2016-03-24 10:48:09  [ main:2166 ] - [ INFO ]  Adding job: group1.asr9kCefUsage_group1
+2016-03-24 10:48:09  [ main:2167 ] - [ INFO ]  Adding job: group2.asr9kCefUsage_group2
+2016-03-24 10:48:09  [ main:2167 ] - [ INFO ]  Adding job: group3.asr9kCefUsage_group3
+2016-03-24 10:48:09  [ main:2184 ] - [ INFO ]  Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2016-03-24 10:48:09  [ QuartzScheduler_Worker-1:2202 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:48:09 03/24/2016
+2016-03-24 10:48:09  [ QuartzScheduler_Worker-1:2203 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:48:09 03/24/2016 and reports: null
+2016-03-24 10:49:08  [ QuartzScheduler_Worker-2:61923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:49:08 03/24/2016
+2016-03-24 10:49:08  [ QuartzScheduler_Worker-2:61924 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:49:08 03/24/2016 and reports: null
+2016-03-24 10:50:00  [ QuartzScheduler_Worker-3:113014 ] - [ INFO ]  Job group1.asr9kCefUsage_group1 fired (by trigger group1.trigger_1) at:  10:50:00 03/24/2016
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113558 ] - [ INFO ]  Loaded fixed inventory defaults file "customDEFAULT.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113574 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeACSW.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113575 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASASW.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113576 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeASR5K.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113576 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeCATOS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113578 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeDEFAULT.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113597 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeHW_VRP.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113598 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113599 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_EXR.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113601 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeIOS_XR.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113603 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeJUNOS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113603 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeME1200_OS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113604 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNAM.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113604 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS-UCSM.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113605 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeNX-OS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113631 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeONS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113633 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSCOS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113634 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeSG500_OS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113635 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeTIMOS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113660 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUCOS.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113661 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeUNIX.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113662 ] - [ INFO ]  Loaded fixed inventory defaults file "xdeWLC.def" from classpath.
+2016-03-24 10:50:00  [ XDE ThreadPool 1:113662 ] - [ INFO ]  Starting package change listener for directory: /root/xdeRuntime/inventoryDefaults
+2016-03-24 10:50:07  [ XDE stats logger:120687 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 120161
+2016-03-24 10:50:08  [ QuartzScheduler_Worker-4:121922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:50:08 03/24/2016
+2016-03-24 10:50:08  [ QuartzScheduler_Worker-4:121923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:50:08 03/24/2016 and reports: null
+2016-03-24 10:51:07  [ XDE stats logger:180688 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 10:51:08  [ QuartzScheduler_Worker-5:181922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:51:08 03/24/2016
+2016-03-24 10:51:08  [ QuartzScheduler_Worker-5:181923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:51:08 03/24/2016 and reports: null
+2016-03-24 10:52:07  [ XDE stats logger:240690 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60002
+2016-03-24 10:52:08  [ QuartzScheduler_Worker-6:241923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:52:08 03/24/2016
+2016-03-24 10:52:08  [ QuartzScheduler_Worker-6:241924 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:52:08 03/24/2016 and reports: null
+2016-03-24 10:53:07  [ XDE stats logger:300690 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60000
+2016-03-24 10:53:08  [ QuartzScheduler_Worker-7:301922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:53:08 03/24/2016
+2016-03-24 10:53:08  [ QuartzScheduler_Worker-7:301923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:53:08 03/24/2016 and reports: null
+2016-03-24 10:54:07  [ XDE stats logger:360691 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 10:54:08  [ QuartzScheduler_Worker-8:361923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:54:08 03/24/2016
+2016-03-24 10:54:08  [ QuartzScheduler_Worker-8:361924 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:54:08 03/24/2016 and reports: null
+2016-03-24 10:54:18  [ QuartzScheduler_Worker-3:371489 ] - [ INFO ]  program is finished
+2016-03-24 10:54:30  [ QuartzScheduler_Worker-3:383063 ] - [ INFO ]  Job group1.asr9kCefUsage_group1 execution complete at  10:54:30 03/24/2016 and reports: null
+2016-03-24 10:55:07  [ XDE stats logger:420692 ] - [ INFO ]  Requests Running 0, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 10:55:08  [ QuartzScheduler_Worker-9:421924 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:55:08 03/24/2016
+2016-03-24 10:55:08  [ QuartzScheduler_Worker-9:421925 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:55:08 03/24/2016 and reports: null
+2016-03-24 10:55:20  [ QuartzScheduler_Worker-10:433019 ] - [ INFO ]  Job group2.asr9kCefUsage_group2 fired (by trigger group2.trigger_2) at:  10:55:20 03/24/2016
+2016-03-24 10:56:07  [ XDE stats logger:480694 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60002
+2016-03-24 10:56:08  [ QuartzScheduler_Worker-11:481922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:56:08 03/24/2016
+2016-03-24 10:56:08  [ QuartzScheduler_Worker-11:481923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:56:08 03/24/2016 and reports: null
+2016-03-24 10:57:07  [ XDE stats logger:540695 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 10:57:08  [ QuartzScheduler_Worker-12:541922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:57:08 03/24/2016
+2016-03-24 10:57:08  [ QuartzScheduler_Worker-12:541922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:57:08 03/24/2016 and reports: null
+2016-03-24 10:58:07  [ XDE stats logger:600696 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 10:58:08  [ QuartzScheduler_Worker-13:601922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:58:08 03/24/2016
+2016-03-24 10:58:08  [ QuartzScheduler_Worker-13:601923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:58:08 03/24/2016 and reports: null
+2016-03-24 10:59:07  [ XDE stats logger:660697 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 10:59:08  [ QuartzScheduler_Worker-14:661923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  10:59:08 03/24/2016
+2016-03-24 10:59:08  [ QuartzScheduler_Worker-14:661925 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  10:59:08 03/24/2016 and reports: null
+2016-03-24 11:00:07  [ XDE stats logger:720698 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 11:00:08  [ QuartzScheduler_Worker-15:721921 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:00:08 03/24/2016
+2016-03-24 11:00:08  [ QuartzScheduler_Worker-15:721922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:00:08 03/24/2016 and reports: null
+2016-03-24 11:00:40  [ QuartzScheduler_Worker-16:753013 ] - [ INFO ]  Job group3.asr9kCefUsage_group3 fired (by trigger group3.trigger_3) at:  11:00:40 03/24/2016
+2016-03-24 11:01:07  [ XDE stats logger:780700 ] - [ INFO ]  Requests Running 2, Requests Waiting 0, Thread Idle Time 60002
+2016-03-24 11:01:08  [ QuartzScheduler_Worker-17:781922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:01:08 03/24/2016
+2016-03-24 11:01:08  [ QuartzScheduler_Worker-17:781923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:01:08 03/24/2016 and reports: null
+2016-03-24 11:02:07  [ XDE stats logger:840700 ] - [ INFO ]  Requests Running 2, Requests Waiting 0, Thread Idle Time 60000
+2016-03-24 11:02:08  [ QuartzScheduler_Worker-18:841922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:02:08 03/24/2016
+2016-03-24 11:02:08  [ QuartzScheduler_Worker-18:841923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:02:08 03/24/2016 and reports: null
+2016-03-24 11:03:07  [ XDE stats logger:900702 ] - [ INFO ]  Requests Running 2, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 11:03:08  [ QuartzScheduler_Worker-19:901922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:03:08 03/24/2016
+2016-03-24 11:03:08  [ QuartzScheduler_Worker-19:901923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:03:08 03/24/2016 and reports: null
+2016-03-24 11:03:19  [ QuartzScheduler_Worker-10:912353 ] - [ INFO ]  program is finished
+2016-03-24 11:03:23  [ QuartzScheduler_Worker-10:916630 ] - [ INFO ]  Job group2.asr9kCefUsage_group2 execution complete at  11:03:23 03/24/2016 and reports: null
+2016-03-24 11:04:07  [ XDE stats logger:960702 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 11:04:08  [ QuartzScheduler_Worker-20:961922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:04:08 03/24/2016
+2016-03-24 11:04:08  [ QuartzScheduler_Worker-20:961923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:04:08 03/24/2016 and reports: null
+2016-03-24 11:05:07  [ XDE stats logger:1020703 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 11:05:08  [ QuartzScheduler_Worker-21:1021925 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:05:08 03/24/2016
+2016-03-24 11:05:08  [ QuartzScheduler_Worker-21:1021926 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:05:08 03/24/2016 and reports: null
+2016-03-24 11:06:07  [ XDE stats logger:1080703 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60000
+2016-03-24 11:06:08  [ QuartzScheduler_Worker-22:1081922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:06:08 03/24/2016
+2016-03-24 11:06:08  [ QuartzScheduler_Worker-22:1081923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:06:08 03/24/2016 and reports: null
+2016-03-24 11:07:07  [ XDE stats logger:1140704 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 11:07:08  [ QuartzScheduler_Worker-23:1141922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:07:08 03/24/2016
+2016-03-24 11:07:08  [ QuartzScheduler_Worker-23:1141923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:07:08 03/24/2016 and reports: null
+2016-03-24 11:08:07  [ XDE stats logger:1200704 ] - [ INFO ]  Requests Running 1, Requests Waiting 0, Thread Idle Time 60000
+2016-03-24 11:08:08  [ QuartzScheduler_Worker-24:1201922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:08:08 03/24/2016
+2016-03-24 11:08:08  [ QuartzScheduler_Worker-24:1201922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:08:08 03/24/2016 and reports: null
+2016-03-24 11:08:25  [ QuartzScheduler_Worker-16:1218842 ] - [ INFO ]  program is finished
+2016-03-24 11:08:30  [ QuartzScheduler_Worker-16:1223820 ] - [ INFO ]  Job group3.asr9kCefUsage_group3 execution complete at  11:08:30 03/24/2016 and reports: null
+2016-03-24 11:09:07  [ XDE stats logger:1260705 ] - [ INFO ]  Requests Running 0, Requests Waiting 0, Thread Idle Time 60001
+2016-03-24 11:09:08  [ QuartzScheduler_Worker-25:1261922 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml fired (by trigger JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml) at:  11:09:08 03/24/2016
+2016-03-24 11:09:08  [ QuartzScheduler_Worker-25:1261923 ] - [ INFO ]  Job JobSchedulingDataLoaderPlugin.JobSchedulingDataLoaderPlugin_jobInitializer_quartz_jobs_xml execution complete at  11:09:08 03/24/2016 and reports: null
