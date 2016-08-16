@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<!--
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <default-action-ref name="index" />
+
+        <global-results>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+
+        <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">HelloWorld</param>
+                <param name="namespace">/example</param>
+            </result>
+        </action>
+    </package>
+
+    <include file="example.xml"/>
+-->
+    <!-- Add packages here -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <constant name="struts.devMode" value="true" />
+    <package name="index" namespace="/" extends="struts-default">
+        <default-action-ref name="index" />
+        <action name="index" class="com.cisco.kta.web.index.index">
+            <result name="success" type="dispatcher">index.jsp</result>
+        </action>
+    </package>
+    <package name="automaticcapture" namespace="/automaticcapture" extends="struts-default">
+        <action name="list" class="com.cisco.kta.web.automaticcapture.list">
+            <result name="success" type="dispatcher">/automaticcapture/list.jsp</result>
+        </action>
+    </package>
+     <package name="asr9kcefusage" namespace="/asr9kcefusage" extends="struts-default">
+        <action name="list" class="com.cisco.kta.web.asr9kcefusage.list">
+            <result name="success" type="dispatcher">/asr9kcefusage/list.jsp</result>
+        </action>
+        <action name="linediagram" class="com.cisco.kta.web.asr9kcefusage.linediagram">
+            <result name="success" type="dispatcher">/asr9kcefusage/linediagram.jsp</result>
+        </action>
+    </package>
+    <package name="transceiverpower" namespace="/transceiverpower" extends="struts-default">
+        <action name="form" class="com.cisco.kta.web.transceiverpower.form">
+            <result name="success" type="dispatcher">/transceiverpower/form.jsp</result>
+        </action>
+        <action name="result" class="com.cisco.kta.web.transceiverpower.result">
+            <result name="success" type="dispatcher">/transceiverpower/result.jsp</result>
+            <result name="error" type="dispatcher">/error.jsp</result>
+        </action>
+    </package>
+    <package name="inventorymanage" namespace="/inventorymanage" extends="struts-default">
+        <action name="list" class="com.cisco.kta.shct.inventory.handler.InventoryList">
+            <result name="success" type="dispatcher">/inventorymanage/inventorylist.jsp</result>
+        </action>
+        <action name="update" class="com.cisco.kta.shct.inventory.handler.InventoryUpdate">
+            <result name="success" type="redirectAction">list</result>
+        </action>
+    </package>
+    <package name="netdr" namespace="/netdr" extends="struts-default">
+        <action name="form" class="com.cisco.kta.web.netdr.form">
+            <result name="success" type="dispatcher">/netdr/form.jsp</result>
+        </action>
+        <action name="result" class="com.cisco.kta.web.netdr.result">
+            <result name="success" type="dispatcher">/netdr/result.jsp</result>
+        </action>
+    </package>
+    <package name="infocapture" namespace="/infocapture" extends="struts-default">
+        <action name="form" class="com.cisco.kta.web.infocapture.form">
+            <result name="success" type="dispatcher">/infocapture/form.jsp</result>
+        </action>
+        <action name="result" class="com.cisco.kta.web.infocapture.result">
+            <result name="success" type="dispatcher">/infocapture/result.jsp</result>
+        </action>
+        <action name="mailsendout" class="com.cisco.kta.web.infocapture.mailsendout">
+            <result name="success" type="dispatcher">/infocapture/success.jsp</result>
+        </action>
+    </package>
+    <package name="aclcommandoutput" namespace="/aclcommandoutput" extends="struts-default">
+        <action name="listtoday" class="com.cisco.kta.web.aclcommandoutput.listtoday">
+            <result name="success" type="dispatcher">/aclcommandoutput/listtoday.jsp</result>
+        </action>
+        <action name="listbydate" class="com.cisco.kta.web.aclcommandoutput.listbydate">
+            <result name="success" type="dispatcher">/aclcommandoutput/listbydate.jsp</result>        
+        </action>
+    </package>
+    <package name="asr9kunicastflooding" namespace="/asr9kunicastflooding" extends="struts-default">
+        <action name="listtoday" class="com.cisco.kta.web.asr9kunicastflooding.listtoday">
+            <result name="success" type="dispatcher">/asr9kunicastflooding/list.jsp</result>
+        </action>
+        <action name="listbydate" class="com.cisco.kta.web.asr9kunicastflooding.listbydate">
+            <result name="success" type="dispatcher">/asr9kunicastflooding/list.jsp</result>        
+        </action>
+    </package>
+    
+</struts>

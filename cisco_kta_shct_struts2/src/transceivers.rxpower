@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<pid id="XFP-10G-MM-SR">
+    <maxrxpower>-1.0</maxrxpower>
+    <minrxpower>-9.9</minrxpower>
+ </pid>
+ <pid id="XFP-10GLR-OC192SR">
+ <maxrxpower>+0.5</maxrxpower>
+ <minrxpower>-14.4</minrxpower>
+ </pid>
+ <pid id="XFP10GLR-192SR-L">
+ <maxrxpower>+0.5</maxrxpower>
+ <minrxpower>-14.4</minrxpower>
+ </pid>
+ <pid id="XFP-10GER-192IR+">
+ <maxrxpower>-1.0</maxrxpower>
+ <minrxpower>-15.8</minrxpower>
+ </pid>
+ <pid id="XFP10GER-192IR-L">
+ <maxrxpower>-1.0</maxrxpower>
+ <minrxpower>-15.8</minrxpower>
+ </pid>
+ <pid id="XFP-10GZR-OC192LR">
+ <maxrxpower>-7</maxrxpower>
+ <minrxpower>-24</minrxpower>
+ </pid>
+ <pid id="OC192 + 10GBASE-L">
+ <maxrxpower>-1</maxrxpower>
+ <minrxpower>-11</minrxpower>
+ </pid>
+ <pid id="OC192 + 10GBASE-E">
+ <maxrxpower>+2</maxrxpower>
+ <minrxpower>-14</minrxpower>
+ </pid>
+ <pid id="OC192 + 10GBASE-Z">
+ <maxrxpower>-7</maxrxpower>
+ <minrxpower>-24</minrxpower>
+ </pid>
+ <pid id="SFP-10G-SR">
+ <maxrxpower>-1.0</maxrxpower>
+ <minrxpower>-9.9</minrxpower>
+ </pid>
+ <pid id="SFP-10G-LR">
+ <maxrxpower>+0.5</maxrxpower>
+ <minrxpower>-14.4</minrxpower>
+ </pid>
+ <pid id="SFP-10G-ZR">
+ <maxrxpower>-7</maxrxpower>
+ <minrxpower>-24</minrxpower>
+ </pid>
+ <pid id="CXP-100GBASE-SR10">
+ <maxrxpower>2.4</maxrxpower>
+ <minrxpower>-9.5</minrxpower>
+ </pid>
+ <pid id="CXP-100GBASE-SR12">
+ <maxrxpower>2.4</maxrxpower>
+ <minrxpower>-9.5</minrxpower>
+ </pid>
+ <pid id="CFP-100GE-LR4">
+ <maxrxpower>4.5</maxrxpower>
+ <minrxpower>-10.6</minrxpower>
+ </pid>
+ <pid id="CFP-100GE-SR10">
+ <maxrxpower>2.4</maxrxpower>
+ <minrxpower>-9.5</minrxpower>
+ </pid>
+ <pid id="CFP-100GE-ER4">
+ <maxrxpower>4.5</maxrxpower>
+ <minrxpower>-20.9</minrxpower>
+ </pid>
+ <pid id="CFP-100GBASE-LR4">
+ <maxrxpower>4.5</maxrxpower>
+ <minrxpower>-10.6</minrxpower>
+ </pid>
+ <pid id="CFP-100GBASE-SR10">
+ <maxrxpower>2.4</maxrxpower>
+ <minrxpower>-9.5</minrxpower>
+ </pid>
+ <pid id="CFP-100GBASE-ER4">
+ <maxrxpower>4.5</maxrxpower>
+ <minrxpower>-20.9</minrxpower>
+ </pid>
+ <pid id="CPAK-100GBASE-LR4">
+ <maxrxpower>4.5</maxrxpower>
+ <minrxpower>-10.6</minrxpower>
+ </pid>
+ <pid id="CPAK-100GBASE-ER4L">
+ <maxrxpower>4.5</maxrxpower>
+ <minrxpower>-16</minrxpower>
+ </pid>
+ <pid id="CPAK-10x10GBASE-LR">
+ <maxrxpower>0.5</maxrxpower>
+ <minrxpower>--14.4</minrxpower>
+ </pid>
+ <pid id="CPAK-100GBASE-SR10">
+ <maxrxpower>2.4</maxrxpower>
+ <minrxpower>-9.5</minrxpower>
+ </pid>
+ <pid id="SFP-GE-L">
+ <maxrxpower>-3</maxrxpower>
+ <minrxpower>-20</minrxpower>
+ </pid>
+ <pid id="SFP-GE-E">
+ <maxrxpower>1</maxrxpower>
+ <minrxpower>-22</minrxpower>
+ </pid>
+ <pid id="SFP-GE-Z">
+ <maxrxpower>-3</maxrxpower>
+ <minrxpower>-23</minrxpower>
+ </pid>
+ <pid id="GLC-LH-SMD">
+ <maxrxpower>-3</maxrxpower>
+ <minrxpower>-20</minrxpower>
+ </pid>
+ <pid id="GLC-EX-SMD">
+ <maxrxpower>1</maxrxpower>
+ <minrxpower>-22</minrxpower>
+ </pid>
+ <pid id="GLC-ZX-SMD">
+ <maxrxpower>-3</maxrxpower>
+ <minrxpower>-23</minrxpower>
+ </pid>
+ </list>

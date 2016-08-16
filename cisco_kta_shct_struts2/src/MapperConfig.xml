@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+  <configuration>
+    <!-- Setup the transaction manager and data source that are
+         appropriate for your environment
+    -->
+    <environments default="dev">
+      <environment id="dev">
+        <transactionManager type="JDBC">
+        </transactionManager>
+        <dataSource type="POOLED">
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/kta_shct_db"/>
+                <property name="username" value="root"/>
+                <property name="password" value="Ciscoxde123!"/>
+                <property name="poolPingEnabled" value="true"/>
+                <property name="poolPingQuery" value="select now() from kta_shct_db.asr9kcefusage limit 1"/>
+                <property name="poolPingConnectionsNotUsedFor" value="14400000"/>
+        </dataSource>
+      </environment>
+    </environments>
+
+    <mappers>
+      <!-- XML mapper files should be listed here -->
+      <mapper resource="com/cisco/kta/shct/database/xml/asr9kCefUsageDtoMapper.xml"/>
+      <mapper resource="com/cisco/kta/shct/database/xml/aclCommandOutputDtoMapper.xml"/>
+      <mapper resource="com/cisco/kta/shct/database/xml/asr9kUnicastFloodingDtoMapper.xml"/>      
+    </mappers>
+
+  </configuration>
